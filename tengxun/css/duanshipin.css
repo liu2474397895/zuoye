@@ -1,0 +1,90 @@
+        /* 导航条 */
+
+        .duanshipin_wrap>.xiaokuang {
+            width: 99%;
+
+            overflow: scroll;
+        }
+
+        .xiaokuang>.daohang {
+            width: 268%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 3%;
+            padding: 3% 0 1% 0%;
+        }
+
+        .xiaokuang>.daohang>li {
+            width: 18vw;
+            height: 3.59vh;
+            float: left;
+            font-weight: bold;
+            font-size: 1em;
+            text-align: center;
+        }
+
+        /* 视频界面 */
+        .video_wrap>.cover_video {
+            width: 100%;
+            position: relative;
+           
+        }
+        .video_wrap>.cover_video>span{
+            z-index: 9999;
+            top:0%;
+            right: 10%;
+            position:absolute;
+            color: white;
+            float: left;
+        }
+        .video_wrap>.cover_video>.dow{
+            right: 44%;
+   
+        }
+        .video_wrap>.cover_video>img {
+            width: 100%;
+            margin: 0 auto;
+            filter: saturate(1.0) hue-rotate(0deg) brightness(0.6) contrast(1.0);
+        }
+
+        .video_wrap>.down_wrap {
+            width: 100%;
+
+        }
+
+        .left_wrap {
+            width: 100%;
+            padding: 6% 0 6% 0%;
+        }
+
+        .left_wrap>.toux {
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 2%;
+            float: left;
+        }
+
+        .left_wrap>.ping {
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            /* padding-left: 5%; */
+            float: right;
+            /* padding-top: 2%; */
+            padding: 2% 2% 0 5%;
+        }
+
+        .left_wrap>span {
+            display: inline-block;
+            padding-left: 2%;
+            background-color: rgb(238, 234, 234);
+            border-radius: 30%;
+            margin-left: 2%;
+            line-height: 170%;
+
+        }
+

@@ -1,0 +1,83 @@
+/*头部类型*/
+
+.pindao_wrap .top_sou span {
+
+    font-size: 1em;
+    float: left;
+    font-weight: bold;
+    padding-right: 10%;
+
+}
+
+.pindao_wrap .top_sou span a {
+    text-decoration: none;
+    font-size: 1em;
+    float: left;
+    font-weight: bold;
+    color: black;
+
+
+}
+
+.pindao_wrap .top_sou .fangdajing {
+    font-family: 'icomoon';
+    padding: 0 0 0 17%;
+    border: 0;
+    color: rgb(204, 204, 203);
+}
+
+.pindao_wrap .top_sou a:hover {
+    border-bottom: 3px solid orange;
+}
+
+.pindao_wrap .top_type {
+    width: 100%;
+    display: flex;
+    padding-bottom: 5%;
+    border-bottom: 1px solid rgb(192, 190, 190);
+}
+
+.pindao_wrap .top_type .type {
+
+    flex: 1;
+}
+
+.pindao_wrap .top_type .type span {
+    font-size: 1em;
+    color: rgb(184, 183, 183);
+    background-color: rgba(177, 177, 177, 0.1);
+    border-radius: 20%;
+}
+
+/*中间部分列表*/
+.pindao_wrap ul {
+    width: 100%;
+
+    padding: 0px;
+
+
+}
+
+.pindao_wrap .list_warp ul>li {
+    width: 48%;
+    height: 40vh;
+    float: left;
+    list-style: none;
+    background-position: 0% 0%;
+}
+
+.pindao_wrap ul li img {
+  width: 100%;
+  height: 70%;
+  
+
+}
+
+
+
+.pindao_wrap ul li:nth-child(n) {
+    padding-right: 2%;
+}
+.pindao_wrap>.list_warp>ul li .hui{
+    color: rgb(155, 155, 155);
+}

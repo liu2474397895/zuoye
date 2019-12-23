@@ -1,0 +1,97 @@
+       /*搜索框*/
+       .sousuo_wrap {
+        width: 98vw;
+        height: 100vh;
+        /* background-color: red; */
+        display: none;
+        margin-left: 2%;
+    }
+
+    .sousuo_wrap>.search {
+        padding-bottom: 2%;
+    }
+
+    .sousuo_wrap>.search .sousuo {
+        font-family: 'icomoon';
+        border: 0px;
+        border-radius: 3%;
+        background-color: rgb(224, 224, 224);
+        width: 80%;
+        font-size: 1em;
+        padding: 2% 0 2% 1%;
+
+    }
+
+    .sousuo_wrap>.search span {
+        color: orange;
+        float: right;
+        padding: 2% 2% 0 0;
+        font-weight: bold;
+    }
+
+    /*历史记录*/
+    .sousuo_wrap>.lishi {
+        width: 100%;
+        padding: 2% 0 5% 0;
+        border-top: 1px solid rgb(224, 224, 224);
+    }
+
+    .sousuo_wrap>.lishi .left{
+        color: rgba(163, 160, 160, 0.8);
+    }
+
+    .sousuo_wrap>.lishi img {
+        width: 5%;
+        float: right;
+    }
+
+    .sousuo_wrap>.lishi .top {
+        background-color: rgb(224, 224, 224);
+        padding: 1% 10% 1% 10%;
+        margin-left: 2%;
+    }
+
+    /*历史搜索列表*/
+
+    .sousuo_wrap>.list_ls span{
+        color:black;
+    }
+    .sousuo_wrap>.list_ls p{
+        color: rgba(145, 144, 144, 0.8);
+    }
+    .sousuo_wrap ul{
+        width: 100%;
+
+    }
+    .sousuo_wrap li{
+        width: 100%;
+        padding:4% 0 4% 0;
+        
+    }
+
+    .sousuo_wrap li>.xulie{
+        display: inline-block;
+        width: 5%;
+        height: 1%;
+        font-size: 1em;
+        color: white;
+        text-align: center ;
+        background-color: rgb(112, 112, 112);
+    }
+    .sousuo_wrap li>.one{
+
+        background-color: red;
+        
+    }
+    .sousuo_wrap li>.two{
+        background-color: orange;
+    }
+    .sousuo_wrap li>.three{
+        background-color: yellow;
+    }
+    .sousuo_wrap li>.rihgt{
+        float:right;
+        font-size: 1em;
+        padding-right: 2%;
+    }
+  

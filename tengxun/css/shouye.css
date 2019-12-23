@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.shouye_wrap{
+    width: 98%;
+    height: 100%;
+    padding: 2% 0 0 2%;
+}
+
+/* 盒子 */
+.box {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* 头部搜索 */
+
+.app_content>.shouye_wrap>.search_warp>.sou {
+    font-family: 'icomoon';
+    color: rgb(248, 99, 31);
+    font-size: 1.25em;
+
+}
+
+
+.app_content>.shouye_wrap>.search_warp input{
+    width: 70%;
+    color: rgb(206, 206, 206);
+    vertical-align: top;
+    border: 0px solid;
+    border-radius: 10%;
+    position: relative;
+    right: -2%;
+}
+
+/* 轮播 */
+.banner .lunbo_img {
+    width: 98%;
+}
+
+.banner {
+    width: 100%;
+}
+
+/* //标题，字体。样式 */
+h3 {
+    font-size: 0.8em;
+    padding-bottom:5%;
+}
+
+H1 {
+    font-size: 1em;
+  
+
+}
+
+
+.box>span {
+    text-align: center;
+    font-family: 'icomoon';
+    color: red;
+    font-size: 0.8em;
+
+}
+
+/* 电视列表 */
+.shouye_wrap ul {
+    width: 100%;
+    padding: 0px;
+
+
+}
+
+.shouye_wrap ul>li {
+    width: 48%;
+    float: left;
+    list-style: none;
+}
+
+.shouye_wrap ul li img {
+
+    width: 100%;
+
+}
+
+.shouye_wrap ul li img .row {
+
+    width: 44vw;
+
+
+}
+.shouye_wrap .xiaohe{
+  
+    width: 100%;
+    overflow: scroll;
+}
+.shouye_wrap .xiaohe ul{
+    width: 268%;
+    padding: 0;
+   
+}
+.shouye_wrap .xiaohe ul li{
+    width: 18%;
+    padding-right:1% ;
+   
+}
+.shouye_wrap ul li:nth-child(n) {
+    padding-right: 2%;
+}
+
+/*刷新字体样式*/
+.font_ag {
+    text-align: center;
+    border-top: 1px solid rgb(231, 229, 229);
+}
+
+.font_ag>span {
+    text-align: center;
+    font-family: 'icomoon';
+    color: red;
+    font-size: 0.7em;
+
+
+}
+
+.font_ag>.agin {
+    color: rgb(175, 174, 174);
+}
+
+.shouye_wrap ul>li>span {
+    color: rgb(175, 174, 174);
+    font-size: 0.8em;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+.app_tabbar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: white;
+    border-top:1px solid rgb(241, 241, 241);
+}
+
+/* 底部的四个小块 */
+.tabbar_item {
+    
+    flex: 1;
+    
+    /* border: 1px solid black; */
+}
+
+.tabbar_item {
+  
+    text-align: center;
+    padding-top: 4%;
+}
+
+.tabbar_item div {
+    height: 10%;
+}
+
+.tabbar_item div img 
+{
+    
+    width: 30%;
+}
+.tabbar .tabbar_item span{
+
+    font-size: 1em;
+}
+
+/* 四个模块区域 */
+.app_content>div{
+    /* width: 100%;
+    height: 100%; */
+    display: none;
+    overflow: scroll;
+}
+.app_content>div:nth-child(1){
+    display: block;
+}

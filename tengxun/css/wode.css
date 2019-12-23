@@ -1,0 +1,80 @@
+/* 头像部分 */
+.wode_wrap>.my_tx {
+    text-align: center;
+    padding:6% 0 6% 0;
+
+}
+
+.wode_wrap>.my_tx>.touxiang {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+
+    border-radius: 50%;
+}
+/* 会员 */
+.wode_wrap>.my_hy {
+    padding: 6% 0 6% 0;
+    border-top: 1px solid rgb(228, 227, 227);
+
+}
+
+.wode_wrap>.my_hy>.vip_logo {
+    float: left;
+    width: 5%;
+}
+
+.wode_wrap>.my_hy>.next_page {
+    width: 5%;
+    float: right;
+}
+
+.wode_wrap>.jianxi {
+    width: 100%;
+    padding-top: 3%;
+    background-color: rgba(219, 218, 218, 0.5);
+}
+/* 播放历史 */
+.wode_wrap>.my_list {
+    width: 100%;
+    padding-bottom: 10%;
+    border-bottom: 1px solid rgb(228, 227, 227);
+}
+.wode_wrap>.my_list>h1 {
+   padding: 7% 0 7% 0;
+}
+
+.wode_wrap>.my_list>.xiaohe {
+    width: 100%;
+    overflow: scroll;
+}
+.wode_wrap>.my_list>.xiaohe>.shipin{
+    width: 301%;
+}
+
+.wode_wrap>.my_list>.xiaohe li {
+    width: 14%;
+    float: left;
+    list-style: none;
+}
+
+.wode_wrap>.my_list>.xiaohe li img {
+    width: 93%;
+    height: 23vw;
+}
+/* 最下边部分 */
+.wode_wrap>.my_text{
+    padding:6% 0 6% 0;
+}
+
+.wode_wrap>.my_text>.next_page {
+   
+    width: 5%;
+    float: right;
+}
+
+.wode_wrap>.my_text>.next_page {
+    width: 5%;
+    float: right;
+
+}
