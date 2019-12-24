@@ -1,18 +1,18 @@
         /* 导航条 */
 
         .duanshipin_wrap>.xiaokuang {
-            width: 99%;
+            width: 100%;
 
             overflow: scroll;
         }
 
         .xiaokuang>.daohang {
-            width: 268%;
+            width: 252%;
             margin: 0;
             padding: 0;
             list-style: none;
-            margin-bottom: 3%;
-            padding: 3% 0 1% 0%;
+            /* margin-bottom: 3%; */
+            padding: 3% 0 3% 0%;
         }
 
         .xiaokuang>.daohang>li {

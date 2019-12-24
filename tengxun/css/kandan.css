@@ -1,0 +1,33 @@
+.kandan_wrap>.exit_anniu {
+    width: 50%;
+}
+
+.kandan_wrap>.exit_anniu img {
+    width: 17%;
+}
+
+.kandan_wrap>.kan_lie ul>li {
+    width: 100%;
+    height: 20%;
+    float: left;
+   
+    padding-top: 1%;
+}
+
+.kandan_wrap>.kan_lie ul>li img {
+    width: 36%;
+    height: 15vh;
+    float: left;
+    position: relative;
+}
+
+.kandan_wrap>.kan_lie span {
+    padding-left: 2%;
+    
+}
+.kandan_wrap>.kan_lie>ul li .dubo{
+    position:absolute;
+    left: 25%;
+    background-color: orange;
+    color: white;
+}

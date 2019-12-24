@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/pindao.css">
     <link rel="stylesheet" href="./css/wode.css">
     <link rel="stylesheet" href="./css/sousuo.css">
+    <link rel="stylesheet" href="./css/kandan.css">
     <style>
         @font-face {
             font-family: 'icomoon';
@@ -24,38 +25,222 @@
             font-display: block;
         }
 
-        .kandan_wrap>.exit_anniu {
-            width: 50%;
-        }
-
-        .kandan_wrap>.exit_anniu img {
-            width: 17%;
-        }
-
-        .kandan_wrap>.kan_lie ul>li {
-            width: 100%;
-            height: 20%;
-            float: left;
-           
-            padding-top: 1%;
-        }
-
-        .kandan_wrap>.kan_lie ul>li img {
-            width: 36%;
-            height: 15vh;
-            float: left;
-            position: relative;
-        }
-
-        .kandan_wrap>.kan_lie span {
-            padding-left: 2%;
-            
-        }
-        .kandan_wrap>.kan_lie>ul li .dubo{
-            position:absolute;
-            left: 25%;
-            background-color: orange;
+        .xiangqing_wrap {
+            background-color: black;
             color: white;
+
+        }
+
+        /*退出按钮*/
+        .xiangqing_wrap>.top {
+            width: 100%;
+            background-color: #fff;
+            position: fixed;
+        }
+
+        .xiangqing_wrap>.off {
+            width: 50%;
+
+        }
+
+        .xiangqing_wrap>.top .off img {
+            width: 11%;
+            vertical-align: bottom;
+        }
+
+        .xiangqing_wrap>.top .off span {
+            padding: 0 0 2% 30%;
+            font-size: 1.5em;
+            color: black;
+            vertical-align: bottom;
+        }
+
+        /*轮播*/
+        .xiangqing_wrap>.banner {
+            width: 100%;
+            position: fixed;
+            top: 6%;
+
+        }
+
+        .xiangqing_wrap>.banner img {
+            width: 100%;
+        }
+
+        .xiangqing_wrap>.bottom {
+            width: 95%;
+            padding: 2%;
+        }
+
+        /*广告倒计时*/
+        .xiangqing_wrap>.bottom>.text {
+            background-color: black;
+            padding: 6% 0% 12% 0%;
+            border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+        }
+
+        .xiangqing_wrap>.bottom>.text .left {
+            float: left;
+            font-size: 0.8em;
+            color: white;
+        }
+
+        .xiangqing_wrap>.bottom>.text .time {
+            float: left;
+            font-size: 0.8em;
+            color: rgba(255, 141, 26, 1);
+        }
+
+        .xiangqing_wrap>.bottom>.text .right {
+            font-size: 0.75em;
+            border-radius: 30%;
+            float: right;
+            padding: 2% 2% 2% 2%;
+            color: rgba(166, 166, 166, 1);
+            background-color: rgba(153, 153, 153, 0.3);
+        }
+
+        /* 节目简介*/
+        .xiangqing_wrap>.bottom>.jiemu {
+            border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+            padding: 6% 0 6% 0;
+        }
+
+        .xiangqing_wrap>.bottom>.jiemu img {
+            width: 6.5%;
+            vertical-align: center;
+        }
+
+        .xiangqing_wrap>.bottom>.jiemu .biaoti {
+            font-size: 1.25em;
+            vertical-align: bottom;
+        }
+
+        .xiangqing_wrap>.bottom>.jiemu .jianjie {
+            padding-left: 45%;
+            font-size: 1em;
+            color: rgba(166, 166, 166, 1)
+        }
+
+        .xiangqing_wrap>.bottom>.jiemu .zizhi {
+            color: orange;
+            font-size: 0.87em;
+            margin: 20% 0 10% 0;
+        }
+
+        .xiangqing_wrap>.bottom>.jiemu .xuanxiu {
+            color: rgba(166, 166, 166, 1);
+            font-size: 0.87em;
+        }
+
+        .xiangqing_wrap>.bottom>.jiemu .gaoqing {
+            border: 2px solid white;
+            font-size: 0.75em;
+            vertical-align: bottom;
+        }
+
+        .xiangqing_wrap>.bottom>.jiemu .gaoqing img {
+            width: 5%;
+            vertical-align: bottom;
+        }
+
+        .xiangqing_wrap>.bottom>.jiemu .right {
+            padding-left: 68%;
+        }
+
+        .xiangqing_wrap>.bottom>.jiemu .you {
+            vertical-align: bottom;
+
+        }
+
+        /*热点列表*/
+        .xiangqing_wrap>.bottom>.kandian {
+            padding-bottom: 10%;
+            border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+        }
+
+        .xiangqing_wrap>.bottom>.kandian>.up>.right img {
+            width: 6.5%;
+            vertical-align: bottom;
+        }
+
+        .xiangqing_wrap>.bottom>.kandian>.up>.right {
+            padding-left: 45%;
+            color: rgba(166, 166, 166, 1);
+        }
+
+        .xiangqing_wrap>.bottom>.kandian>.up {
+            padding: 5% 0 5% 0;
+        }
+
+        .kandian>.liebiao {
+            width: 102%;
+            overflow: scroll;
+        }
+
+        .kandian>.liebiao>.hezi {
+            width: 400%;
+
+        }
+
+        .kandian>.liebiao>.hezi>li {
+            width: 10%;
+            list-style: none;
+            float: left;
+            margin-right: 1%;
+            background-color: rgba(166, 166, 166, 0.2);
+        }
+
+        .kandian>.liebiao>.hezi>li span {
+            width: 100%;
+            float: left;
+            color: rgba(166, 166, 166, 1);
+
+        }
+
+        /*精彩片花*/
+        .kandian>.pianhua>.top {
+            margin: 6% 0 6% 0;
+            padding-top: 6%;
+            border-top: 1px solid rgba(153, 153, 153, 0.4);
+        }
+
+        .kandian>.pianhua .right {
+            color: rgba(166, 166, 166, 1);
+            padding-left: 75%;
+
+        }
+
+        .kandian>.pianhua>.shipin {
+            width: 100%;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .kandian>.pianhua>.shipin img {
+            width: 30%;
+            vertical-align: top;
+
+
+        }
+
+        .kandian>.pianhua>.shipin span {
+
+            margin-top: 4%;
+            font-size: 0.87em;
+
+
+
+
+        }
+
+        .kandian>.pianhua>.shipin>.bom>.one {
+            color: rgba(166, 166, 166, 1);
+        }
+
+
+        .kandian>.pianhua>p {
+            text-align: center;
         }
     </style>
 
@@ -71,7 +256,7 @@
                 <div class="lunbo_wrap">
                     <div class="banner">
                         <div class="lunbo_imgs">
-                            <img class="lunbo_img" src="./image/轮播.jpg" alt="">
+                            <img class="lunbo_img click" src="./image/轮播.jpg" alt="">
                         </div>
 
                     </div>
@@ -81,44 +266,44 @@
                     <ul>
                         <H1>暑假刷片看这里!</H1>
                         <li>
-                            <img src="./image/1.jpeg" alt="">
+                            <img class="click" src="./image/1.jpeg" alt="">
                             <p>小戏骨mv外卖小哥</p>
                             <span>萌娃致敬烈日下劳动者</span>
 
                         </li>
                         <li>
-                            <img src="./image/图片 3.jpeg" alt="">
+                            <img class="click" src="./image/图片 3.jpeg" alt="">
                             <p>惹上冷殿下8.8首播</p>
                             <span>迷妹撩爱豆饭圈高糖恋</span>
                         </li>
                         <li>
-                            <img src="./image/图片 4.jpeg" alt="">
+                            <img class="click" src="./image/图片 4.jpeg" alt="">
                             <p>南方有乔木&nbsp;TV版</p>
                             <span>陈伟霆腹黑撩白百何</span>
                         </li>
                         <li>
-                            <img src="./image/图片 4.jpeg" alt="">
+                            <img class="click" src="./image/图片 4.jpeg" alt="">
                             <p>爱情进化论8.2首播</p>
                             <span>张若昀吻张天爱</span>
                         </li>
                         <li>
-                            <img src="./image/6(1).jpeg" alt="">
+                            <img class="click" src="./image/6(1).jpeg" alt="">
                             <p>明日之子·第二季</p>
                             <span>华晨宇痛哭不舍文兆杰</span>
                         </li>
                         <li>
-                            <img src="./image/图片 5.jpeg" alt="">
+                            <img class="click" src="./image/图片 5.jpeg" alt="">
 
                             <p>入戏李宏毅</p>
                             <span>25岁前结婚这想法改变！</span>
                         </li>
                         <li>
-                            <img src="./image/7.jpeg" alt="">
+                            <img class="click" src="./image/7.jpeg" alt="">
                             <p>幸福三重奏优享版</p>
                             <span>s姐妹召开消灭四害研讨会</span>
                         </li>
                         <li>
-                            <img src="./image/8.jpeg" alt="">
+                            <img class="click" src="./image/8.jpeg" alt="">
                             <p>火箭少女101研究所</p>
                             <span>宣仪跳浮夸舞蹈wink超可爱</span>
                         </li>
@@ -135,32 +320,32 @@
                     <ul>
                         <H1>新闻一览</H1>
                         <li>
-                            <img src="./image/xin1.jpeg" alt="">
+                            <img class="click" src="./image/xin1.jpeg" alt="">
                             <p>马航mh370事件“终极报告”今天将出炉！</p>
 
                         </li>
                         <li>
-                            <img src="./image/xin2.jpeg" alt="">
+                            <img class="click" src="./image/xin2.jpeg" alt="">
                             <p>8月起这些新规将实施我们都将收到这样一条短信</p>
 
                         </li>
                         <li>
-                            <img src="./image/xin3.jpeg" alt="">
+                            <img class="click" src="./image/xin3.jpeg" alt="">
                             <p>孟美岐演讲我就是那个拿了第一名的女孩</p>
 
                         </li>
                         <li>
-                            <img src="./image/xin3.jpeg" alt="">
+                            <img class="click" src="./image/xin3.jpeg" alt="">
                             <p>迷妹专访101yamy：很喜欢有遗憾的感觉</p>
 
                         </li>
                         <li>
-                            <img src="./image/xin5.jpeg" alt="">
+                            <img class="click" src="./image/xin5.jpeg" alt="">
                             <p>SNH48总决选前三专访</p>
 
                         </li>
                         <li>
-                            <img src="./image/xin6.jpeg" alt="">
+                            <img class="click" src="./image/xin6.jpeg" alt="">
                             <p>真正的金丝缕衣！古人葬礼都这么奢侈么</p>
 
                         </li>
@@ -178,27 +363,27 @@
                             <h1>明日之子·九大厂牌候选人</h1>
 
                             <li>
-                                <img src="./image/ming1.jpeg" alt="">
+                                <img class="click" src="./image/ming1.jpeg" alt="">
                                 <p>九大厂牌候选人争夺</p>
                                 <span>2018-7-28第五期</span>
                             </li>
                             <li>
-                                <img src="./image/ming2.jpeg" alt="">
+                                <img class="click" src="./image/ming2.jpeg" alt="">
                                 <p>升级战13强冲出重围</p>
                                 <span>2018-7-21第四期</span>
                             </li>
                             <li>
-                                <img src="./image/ming3.jpeg" alt="">
+                                <img class="click" src="./image/ming3.jpeg" alt="">
                                 <p>升级战13强冲出重围</p>
                                 <span>2018-7-21第四期</span>
                             </li>
                             <li>
-                                <img src="./image/ming4.jpeg" alt="">
+                                <img class="click" class="click" src="./image/ming4.jpeg" alt="">
                                 <p>升级战13强冲出重围</p>
                                 <span>2018-7-21第四期</span>
                             </li>
                             <li>
-                                <img src="./image/ming5.jpeg" alt="">
+                                <img class="click" src="./image/ming5.jpeg" alt="">
                                 <p>升级战13强冲出重围</p>
                                 <span>2018-7-21第四期</span>
                             </li>
@@ -568,7 +753,126 @@
                 </div>
             </div>
             <div class="xiangqing_wrap">
-                
+                <div class="top">
+                    <div class="off">
+                        <img src="./image/看单1.svg" alt="">
+                        <span>腾讯视频</span>
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="./image/详情1.jpg" alt="">
+                </div>
+                <div style="height: 30%;"><br><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="bottom">
+                    <div class="text">
+                        <span class="left">广告倒计时</span>
+                        <span class="time">15</span>
+                        <span class="left">秒</span>
+                        <span class="right">5秒后可跳过</span>
+                    </div>
+                    <div class="jiemu">
+                        <br>
+                        <span class="biaoti">明日之子 第2季</span><span><span class="jianjie">简介</span><img class="you"
+                                src="./image/详情右.svg" alt=""></span>
+                        <br><span class="zizhi">自制</span><span class="xuanxiu">·选秀·2.5亿</span>
+                        <br><span class="gaoqing">高清<img src="./image/详情下.svg" alt=""></span>
+                        <span class="right"><img src="./image/详情分享.svg" alt=""> <img src="./image/详情3.svg"
+                                alt=""></span> <br><br>
+                    </div>
+                    <div class="kandian">
+                        <div class="up">
+                            <span>2018-07-28期 看点</span>
+                            <span class="right">
+                                <span>55</span>
+                                <img src="./image/详情右.svg" alt=""></span>
+                            </span>
+                        </div>
+                        <div class="liebiao">
+                            <ul class="hezi">
+                                <li><span style=" color: rgba(255, 141, 26, 1);">【第二组PK】陆政
+                                        廷又唱rap，文兆杰
+                                        田燚《他他他》...</span></li>
+                                <li><span>华晨宇没能保住文
+                                        兆杰，遗憾到流
+                                        泪：我觉得不公平</span></li>
+                                <li><span>华晨宇没能保住文
+                                        兆杰，遗憾到流
+                                        泪：我觉得不公平</span></li>
+                                <li><span>华晨宇没能保住文
+                                        兆杰，遗憾到流
+                                        泪：我觉得不公平</span></li>
+                                <li><span>华晨宇没能保住文
+                                        兆杰，遗憾到流
+                                        泪：我觉得不公平</span></li>
+                                <li><span>华晨宇没能保住文
+                                        兆杰，遗憾到流
+                                        泪：我觉得不公平</span></li>
+                                <li><span>华晨宇没能保住文
+                                        兆杰，遗憾到流
+                                        泪：我觉得不公平</span></li>
+                                <li><span>华晨宇没能保住文
+                                        兆杰，遗憾到流
+                                        泪：我觉得不公平</span></li>
+                                <li><span>华晨宇没能保住文
+                                        兆杰，遗憾到流
+                                        泪：我觉得不公平</span></li>
+                            </ul>
+                        </div>
+                        <div class="pianhua">
+                            <div class="top">
+                                <span class="left">精彩片花 </span>
+                                <span class="right">40</span>
+                            </div>
+                            <div class="shipin">
+                                <img src="./image/详情5.jpeg" alt="">
+
+                                <span>华晨宇聊到魔音选手心疼落泪：没想到陆政廷会被淘汰...</span>
+                            </div>
+                            <div class="shipin">
+                                <img src="./image/详情6.jpeg" alt="">
+                                <span>文兆杰专访：没想过自己会复活，以后不会在让花花失望</span>
+                            </div>
+                            <div class="shipin">
+                                <img src="./image/详情7.jpeg" alt="">
+                                <span>斯外戈专访：能复活超开心，
+                                    最对不起和感谢的人是春春</span>
+                            </div>
+                            <p>全部</p>
+
+                        </div>
+                        <div class="pianhua">
+                            <div class="top">
+                                <span class="left">为你推荐</span>
+                            </div>
+                            <div class="shipin">
+                                <img src="./image/详情8.jpeg" alt="">
+                                <div class="bom">
+                                    <span>我家那小子</span></br>
+                                    <span class="one">第4期：父母离异，陈学冬武艺受
+                                        影响</span>
+                                </div>
+                            </div>
+                            <div class="shipin">
+                                <img src="./image/详情9.jpeg" alt="">
+                                <div class="bom">
+                                    <span>放开我北鼻 第3季</span></br>
+                                    <span class="one">第10期：释小龙空降少林寺教萌娃
+                                        练功夫</span>
+                                </div>
+                            </div>
+                            <div class="shipin">
+                                <img src="./image/详情10.jpeg" alt="">
+                                <div class="bom">
+                                    <span>明日之子悠享版</span></br>
+                                    <span class="one">悠享版第8期：赛道分组密室讨论
+                                        全程</span>
+                                </div>
+                            </div>
+                            <p>全部</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="app_tabbar">
@@ -608,171 +912,9 @@
     </div>
 </body>
 <script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/dianji.js"></script>
 <script type="text/javascript">
-    var one_img = $(".tabbar_item div img")
-    one_img.css({
-        "height": one_img.width() + "px"
-    })
 
-    // 底部到行上的点击事件
-    $(".tabbar_item").click(function () {
-
-        var that = this
-
-        var dian_index = $(this).index()
-
-        $(".tabbar_item").each(function (index, item) {
-            if (dian_index == index) {
-                var cur_src = $(item).find("img").attr("src")
-                if (cur_src.indexOf("_a") == -1) {
-                    $(item).find("img").attr("src", cur_src.replace(".png", "_a.png"))
-                }
-            } else {
-                var cur_src = $(item).find("img").attr("src")
-                $(item).find("img").attr("src", cur_src.replace("_a", ""))
-
-            }
-        })
-
-
-        $(".app_content>div").each(function (index, item) {
-            if ($(that).index() == index) {
-                $(item).css({
-                    "display": "block"
-                })
-            } else {
-                $(item).css({
-                    "display": "none"
-                })
-            }
-        })
-    })
-
-
-
-
-
-
-    ////搜索框开启单击事件
-
-    $(".search_warp").click(function () {
-        var that = this
-        // if ($(that) == $(that)) {
-        //     $(".sousuo_warp").css({
-        //             "display": "block"
-        //         })
-        //     } 
-
-        $(".app_content>div").each(function (index, item) {
-            if ($(that) == $(that)) {
-                $(".sousuo_wrap").css({
-                    "display": "none"
-                })
-                $(".shouye_wrap").css({
-                    "display": "none"
-                })
-
-            } else {
-                $(".sousuo_wrap").css({
-                    "display": "block"
-                })
-                $(".shouye_wrap").css({
-                    "display": "none"
-                })
-            }
-        })
-    })
-
-
-    ////搜索框关闭单击事件
-    $(".quxiao").click(function () {
-        var that = this
-
-        $(".app_content>div").each(function (index, item) {
-            if ($(that) == $(that)) {
-                $(".sousuo_wrap").css({
-                    "display": "block"
-                })
-                $(".shouye_wrap").css({
-                    "display": "block"
-                })
-
-            } else {
-                $(".sousuo_wrap").css({
-                    "display": "none"
-                })
-                $(".shouye_wrap").css({
-                    "display": "block"
-                })
-            }
-        })
-
-    })
-
-
-
-    ///看单列表单击事件
-    $(".my_text").click(function () {
-        var that = this
-
-        $(".box>div").each(function (index, item) {
-            if ($(that) == $(that)) {
-                $(".kandan_wrap").css({
-                    "display": "none"
-                })
-                $(".wode_wrap").css({
-                    "display": "none"
-                })
-                $(".app_tabbar").css({
-                    "display": "none"
-                })
-            } else {
-                $(".kandan_wrap").css({
-                    "display": "block"
-                })
-                $(".wode_wrap").css({
-                    "display": "none"
-                })
-                $(".app_tabbar").css({
-                    "display": "none"
-                })
-            }
-        })
-    })
-
-    ///看单列表关闭单击事件
-    $(".exit_anniu").click(function () {
-        var that = this
-
-        $(".box>div").each(function (index, item) {
-            if ($(that) == $(that)) {
-                $(".kandan_wrap").css({
-                    "display": "block"
-
-                })
-                $(".wode_wrap").css({
-
-                    "display": "none"
-                })
-                $(".app_tabbar").css({
-                    "display": "none"
-
-                })
-            } else {
-                $(".kandan_wrap").css({
-                    "display": "none"
-                })
-                $(".wode_wrap").css({
-                    "display": "block"
-
-                })
-                $(".app_tabbar").css({
-                    "display": "block"
-
-                })
-            }
-        })
-    })
 </script>
 
 </html>
