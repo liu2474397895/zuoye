@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-huidian.css" />
     <link rel="stylesheet" href="css/animate.css" />
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+    <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
     <!--导航-->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default  btn-info navbar-fixed-top">
         <div class="container">
             <!--小屏幕导航按钮和logo-->
             <div class="navbar-header">
@@ -43,10 +50,10 @@
     <!--导航-->
 
     <!--home-->
-    <section id="home" >
+    <section id="home">
         <div class="lvjing">
             <div class="container">
-                <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row wow rollIn bg-blue" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <h1>bootstrap实战课程等你来战！</h1>
@@ -100,7 +107,7 @@
     <!--bbs-->
     <section id="bbs">
         <div class="container">
-            <div class="row wow fadeInUp" data-wow-duration="0.5s">
+            <div class="row wow flipInX" data-wow-duration="0.5s">
                 <div class="col-md-4">
                     <a data-name="第一个" data-toggle="modal" data-target="#myModal">
                         <img src="images/a.png" class="img-responsive" alt="" />
@@ -182,18 +189,28 @@
     <!--html5-->
     <section id="html5">
         <div class="container">
-            <div class="col-md-6 wow fadeInLeft">
+            <div class="col-md-6 wow lightSpeedIn">
                 <h2>HTML5前端开发</h2>
                 <p>一线资深前端开发工程师倾情打造！助你完成普通程序员到优秀工程师的华丽升级！</p>
                 <p><span class="glyphicon glyphicon-grain mai-icon"></span>使用HTML5与CSS3技术轻松实现设备自适应展示。</p>
                 <p><span class="glyphicon glyphicon-grain mai-icon"></span>清晰明了的语义代码结构，更高的可读性、更利于页面维护的。</p>
             </div>
             <div class="col-md-6 wow fadeInRight">
-                <img src="images/html5.jpg" class="img-responsive" alt="" />
-                <button type="button" class="my_tankuang btn btn-success" data-container="body" data-toggle="popover" data-placement="right"
-                data-content="请先登录">
-                  点击加入
-               </button>
+                <div class="container demo-1">
+                    <!-- Top Navigation -->
+                    <ul class="grid cs-style-1">
+                        <li>
+                            <figure>
+                                <img src="images/html5.jpg" class="img-responsive" alt="img01" />
+                                <figcaption>
+                                    <h3>Camera</h3>
+                                    <span>Jacob Cummings</span>
+                                    <a href="http://www.jq22.com">Take a look</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -203,11 +220,21 @@
     <section id="bootstrap">
         <div class="container wow fadeInUp">
             <div class="col-md-6">
-                <img src="images/Bootstrap.jpg" class="img-responsive" alt="" />
-                <button type="button" class="my_tankuang btn btn-success" data-container="body" data-toggle="popover" data-placement="right"
-                data-content="请先登录">
-                  点击加入
-               </button>
+                    <div class="container demo-1">
+                            <!-- Top Navigation -->
+                            <ul class="grid cs-style-1">
+                                <li>
+                                    <figure>
+                                        <img src="images/Bootstrap.jpg" class="img-responsive" alt="img01" />
+                                        <figcaption>
+                                            <h3>Camera</h3>
+                                            <span>Jacob Cummings</span>
+                                            <a href="http://www.jq22.com">Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>    
             </div>
             <div class="col-md-6">
                 <h2>bootstrap实战视频教程</h2>
@@ -224,7 +251,7 @@
     <!--course-->
     <section id="course">
         <div class="container">
-            <div class="row wow fadeIn" data-wow-delay="0.6s">
+            <div class="row wow rollIn " data-wow-delay="0.6s">
                 <div class="col-md-12">
                     <h2>最新课程</h2>
                 </div>
@@ -232,65 +259,100 @@
                     <div class="course">
                         <img src="images/swift.jpg" class="img-responsive" alt="" />
 
-                        <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        <a class="btn btn-primary btn-sm si" target="_blank" role="button" data-toggle="modal"
+                            data-target="#myModa4">
                             加入学习
+
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="course">
                         <img src="images/swift.jpg" class="img-responsive" alt="" />
-                        <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        <a class="btn btn-primary btn-sm si" target="_blank" role="button" data-toggle="modal"
+                            data-target="#myModa4">
                             加入学习
+
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="course">
                         <img src="images/swift.jpg" class="img-responsive" alt="" />
-                        <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        <a class="btn btn-primary btn-sm si" target="_blank" role="button" data-toggle="modal"
+                            data-target="#myModa4">
                             加入学习
+
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="course">
                         <img src="images/swift.jpg" class="img-responsive" alt="" />
-                        <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        <a class="btn btn-primary btn-sm si" target="_blank" role="button" data-toggle="modal"
+                            data-target="#myModa4">
                             加入学习
+
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="course">
                         <img src="images/swift.jpg" class="img-responsive" alt="" />
-                        <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        <a class="btn btn-primary btn-sm si" target="_blank" role="button" data-toggle="modal"
+                            data-target="#myModa4">
                             加入学习
+
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="course">
                         <img src="images/swift.jpg" class="img-responsive" alt="" />
-                        <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        <a class="btn btn-primary btn-sm si" target="_blank" role="button" data-toggle="modal"
+                            data-target="#myModa4">
                             加入学习
+
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="course">
                         <img src="images/swift.jpg" class="img-responsive" alt="" />
-                        <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        <a class="btn btn-primary btn-sm si" target="_blank" role="button" data-toggle="modal"
+                            data-target="#myModa4">
                             加入学习
+
                         </a>
                     </div>
                 </div>
+
                 <div class="col-md-3">
                     <div class="course">
                         <img src="images/swift.jpg" class="img-responsive" alt="" />
-                        <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        <a class="btn btn-primary btn-sm si" target="_blank" role="button" data-toggle="modal"
+                            data-target="#myModa4">
                             加入学习
+
                         </a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModa4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">联系方式</h4>
+                            </div>
+                            <div class="modal-body">
+                                <input class="form-control my_content" type="text" placeholder="手机号">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">退出</button>
+                                <button type="button" class="btn btn-primary">提交</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,7 +363,7 @@
     <!--app-->
     <section id="app">
         <div class="container">
-            <div class="row  wow fadeInUp">
+            <div class="row  wow bounceInDown">
                 <div class="col-md-6">
                     <h2>慧点科技移动APP下载</h2>
                     <p>
@@ -314,40 +376,42 @@
                     <button class="btn btn-danger btn-sm my_collepse"> iPhone版</button>
                     <button class="btn btn-danger btn-sm my_uncollepse"> Android版</button>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                                         aria-expanded="false" aria-controls="collapseTwo">
-                                           下载链接
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body">
-                                    www.baidu.com
-                                    </div>
-                                </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        下载链接
+                                    </a>
+                                </h4>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
-                                         aria-expanded="false" aria-controls="collapseThree">
-                                           下载链接
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                            www.baidu.com
-                                    </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    www.baidu.com
                                 </div>
                             </div>
                         </div>
-                
-                
-                     
-<!--                 
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        下载链接
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    www.baidu.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!--                 
                     <button class="btn btn-primary">
                         <span class="glyphicon glyphicon-download-alt"></span>
                         Android版
@@ -398,7 +462,7 @@
                                 <input type="text" class="form-control" placeholder="您的姓名" />
                             </div>
                             <div class="col-md-6">
-                                
+
                                 <input type="email" class="form-control" placeholder="您的邮箱" />
                             </div>
                             <div class="col-md-12">
@@ -408,18 +472,17 @@
                                 <textarea class="form-control" placeholder="留言内容" rows="4"></textarea>
                             </div>
                             <div class="btn-group ">
-                                    <button type="button" class="btn btn-danger">上一级</button>
-                                    <button type="button" class="btn btn-danger dropdown-toggle my_drop_btn" data-toggle="dropdown" aria-haspopup="true"
-                                     aria-expanded="false">
-                                        <span class="caret"></span>
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#app">返回顶部</a></li>
-                                        <li><a href="#">刷新</a></li>
-                                   
-                                    </ul>
-                                </div>
+                                <button type="button" class="btn btn-danger">上一级</button>
+                                <button type="button" class="btn btn-danger dropdown-toggle my_drop_btn"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#app">返回顶部</a></li>
+                                    <li><a href="#">刷新</a></li>
+                                </ul>
+                            </div>
                             <div class="col-md-8">
                                 <input type="submit" class="form-control" value="提交" />
                             </div>
@@ -446,6 +509,7 @@
     <!--footer-->
 
 
+    <script src="js/toucheffects.js"></script>
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
@@ -466,7 +530,7 @@
 
             // 初始化
             $('.carousel').carousel({
-                interval: 3000,
+                interval: 2000,
                 pause: "hover"
             })
 
@@ -486,17 +550,17 @@
         })
 
 
-        $(function() {
-			$('[data-toggle="popover"]').popover()
+        $(function () {
+            $('[data-toggle="popover"]').popover()
 
-			$(".my_btn_open").click(function() {
-				$('.my_tankuang').popover('show')
-			})
-			$(".my_btn_close").click(function() {
-				$('.my_tankuang').popover('hide')
-			})
-			
-			
+            $(".my_btn_open").click(function () {
+                $('.my_tankuang').popover('show')
+            })
+            $(".my_btn_close").click(function () {
+                $('.my_tankuang').popover('hide')
+            })
+
+
 			/*
 				事件: 
 				show.bs.popover	
@@ -505,17 +569,37 @@
 				hidden.bs.popover	
 				inserted.bs.popover
 			*/
-			
-			$('body').on('show.bs.popover', function() {
-				// do something…
-				console.log("弹框显示.....")
-			})
 
-			$('body').on('hidden.bs.popover', function() {
-				// do something…
-				console.log("弹框消失.....")
-			})
-		})
+            $('body').on('show.bs.popover', function () {
+                // do something…
+                console.log("弹框显示.....")
+            })
+
+            $('body').on('hidden.bs.popover', function () {
+                // do something…
+                console.log("弹框消失.....")
+            })
+        })
+
+
+        // data 属性
+        // 你可以仅仅通过 data 属性 API 就能使用所有的 Bootstrap 插件，无需写一行 JavaScript 代码。
+        // 这是 Bootstrap 中的一等 API，也应该是你的首选方式。
+        // $(document).off('.data-api')
+        $(document).off('.alert.data-api')
+
+		// 监听模态框弹出事件
+		/*
+		事件类型 描述
+		show.bs.modal show 方法调用之后立即触发该事件。 如果是通过点击某个作为触发器的元素，
+				则此元素可以通过事件的 relatedTarget 属性进行访问。
+		shown.bs.modal 此事件在模态框已经显示出来（ 并且同时在 CSS 过渡效果完成） 之后被触发。
+				如果是通过点击某个作为触发器的元素， 则此元素可以通过事件的 relatedTarget 属性进行访问。
+		hide.bs.modal hide 方法调用之后立即触发该事件。
+		hidden.bs.modal 此事件在模态框被隐藏（ 并且同时在 CSS 过渡效果完成） 之后被触发。
+		loaded.bs.modal 从远端的数据源加载完数据之后触发该事件。
+		*/
+
     </script>
 </body>
 
