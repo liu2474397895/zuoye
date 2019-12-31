@@ -1,0 +1,95 @@
+
+.head>div{
+
+    height: 50px;
+    
+}
+
+.head>div>a{
+    text-decoration:none;
+    color: black;
+    display: inline-block;
+    height: 50px;
+    padding-top: 15px;
+    
+}
+/*hezi*/
+.box{
+    background: #F5F5F5;
+}
+.nav{
+    text-align: center;
+    height: 130px;
+    margin-top: 20px;
+}
+.nav>i{
+    display: inline-block;
+    width: 100px;
+    background-position: center;
+    background: url(../img/line_yellow.png) no-repeat;
+    display: block;
+    margin-top: 20px;
+    
+    
+}
+.nav>span{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    height: 40px;
+    vertical-align: middle;
+}
+/*中间*/
+.subject{
+    padding-bottom: 50px;
+}
+.fonts{
+    text-align: center;
+    color: rgba(105, 101, 101, 0.4);
+}
+
+h1{
+    font-weight: bold;
+   
+}
+.sanding_yi{
+    text-align: right;
+    color: rgba(105, 101, 101, 0.4);
+}
+
+/* 边框线 */
+.one{
+    border-top: 1px solid rgba(70, 69, 69, 0.2);
+    border-bottom:  rgba(70, 69, 69, 0.2) 1px solid;
+}
+.two{
+    border-top: 1px solid rgba(70, 69, 69, 0.2);
+    border-bottom:  rgba(70, 69, 69, 0.2) 1px solid;
+}
+.three{
+    border-top: 1px solid rgba(218, 243, 105, 0.2);
+    border-bottom:  rgba(70, 69, 69, 0.2) 1px solid;
+}
+.Bottom{
+    text-align: center;
+    padding-top: 20px;
+    height: 66px;
+    color: white;
+    border-top: 2px solid #eff77e;
+    background-color:  rgba(70, 69, 69, 0.6);
+}
+
+.one>.fonts:hover{
+    border-left: 16px solid rgba(225, 248, 13, 1);
+    color: black;
+}
+.two> .sanding_yi:hover{
+    border-right:16px solid rgba(225, 248, 13, 1);
+    color: black;
+}
+
+
+.three>.fonts:hover{
+    border-left:16px solid rgba(225, 248, 13, 1);
+    color: black;
+}
