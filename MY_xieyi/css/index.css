@@ -74,9 +74,9 @@ h1{
     text-align: center;
     padding-top: 20px;
     height: 66px;
-    color: white;
+    color: rgb(238, 238, 238);
     border-top: 2px solid #eff77e;
-    background-color:  rgba(70, 69, 69, 0.6);
+    background-color: #b4b4b4;
 }
 
 .one>.fonts:hover{
@@ -92,4 +92,7 @@ h1{
 .three>.fonts:hover{
     border-left:16px solid rgba(225, 248, 13, 1);
     color: black;
+}
+.container{
+    color: #898989;
 }

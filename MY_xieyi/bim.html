@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<style>
+#content{
+	    /*max-width: 980px;*/
+    width: 100%;
+    /* min-width: 320px; */
+    background: #e5e5e5;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1em;
+}
+.title_wrap{
+	height: 5.7em;
+}
+.z_con_wrap{
+	width: 100%;
+	height: 100%;
+	
+}
+.z_con_wrap>img{
+	width: 100%;
+	height: 100%;
+	
+}
+.z_con1,.z_con2,.z_con3,.z_con4,.z_con5{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.z_con1>img,.z_con2>img,.z_con3>img,.z_con4>img,.z_con5>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.z_con-wrap{
+	position: relative;
+	max-width: 980px;
+	width: 75%;
+	height: 100%;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+	z-index: 50;
+}
+.z_con-wrap h3{
+	color: #616161;
+	display: inline-block;
+	background: #cfdb00;
+	line-height: 150%;
+	font-size: 1.4em;
+	padding: 0 8% 0 2%;
+	margin-left: 1%;
+}
+.z_con-wrap span{
+	display: block;
+	width: 60%;
+	line-height: 1.4em;
+	/*margin: 4% 0;*/
+	margin: 2.5em 0;
+	z-index: 100;
+	word-break: break-word;
+}
+.z_con-con1,.z_con-con2,.z_con-con3,.z_con-con4,.z_con-con5{
+	position: relative;
+}
+.z_con-con1{
+	z-index: 100;
+	/*padding: 35% 0 20%;*/
+	padding-top: 200px;
+	/*padding-top: 10em;*/
+	padding-bottom: 4em;
+}
+.z_con-con1 div{
+	width: 60%;
+	overflow: hidden;
+	margin-left: 2%;
+	/*margin-top: 10%;*/
+	padding-top: 5.5em;
+}
+.z_con-con1 div img{
+	width: 33%;
+	float: left;
+}
+.z_con-con2{
+	/*padding: 25% 0;*/
+	padding: 15em 0;
+	z-index: 100;
+}
+.z_con-con2 div{
+	width: 50%;
+	overflow: hidden;
+	margin-left: 2%;
+}
+.z_con-con2 div img{
+	width: 47%;
+	margin: 15px 2% 0 0;
+}
+.z_con-con3{
+	z-index: 100;
+	/*padding: 30% 0 25% 32%;*/
+	padding-bottom: 245px;
+	/*padding-left: 313.59375px;
+	padding-right: 0px;
+	padding-top: 294px;*/
+	padding-top: 20.625em;
+	padding-bottom: 15.35em;
+	padding-left: 19.5625em;
+}
+.z_con-con3 span{
+	width: 80%;
+}
+.z_con-con3 div img{
+	width: 45%;
+	margin: 0 2%;
+}
+.z_con-con4{
+	padding: 13.4375em 0 6.125em 15.3125em;
+	z-index: 100;
+}
+.z_con-wrap .z_con-con4 span{
+	width: 70%;
+}
+.z_con-con4 div{
+	width: 40%;
+}
+.z_con-con4 div img{
+	width: 100%;
+	margin: 0.8em 0;
+}
+.z_con-con5{
+	/*padding: 392px 0 294px;*/
+	padding: 24.5em 0 18.375em;
+	z-index: 100;
+}
+.building1-half-t{
+	width: 55%;
+	position: absolute;
+	right: -15%;
+	bottom: 0;
+}
+.building1-half-b{
+	width: 55%;
+	position: absolute;
+	right: -7.9%;
+	top: 0;
+}
+.building2-half-t{
+	width: 55%;
+	position: absolute;
+	left: -15%;
+	bottom: 0;
+}
+.building2-half-b{
+	width: 55%;
+	position: absolute;
+	left: -7.9%;
+	top: 0;
+}
+.building3-half-t{
+	width: 55%;
+	position: absolute;
+	right: -15%;
+	bottom: 0;
+}
+.building3-half-b{
+	width: 55%;
+	position: absolute;
+	right: -7.15%;
+	top: 0;
+}
+#wrap{padding-top: 4.2em;}
+.head_wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 4.2em;
+	z-index:999;
+	}
+.j_nav_wrap{height: 100%;}
+.j_nav{
+	max-width: 980px;
+	margin: 0 auto;
+	width: 100%;
+	height:4.2em;
+	background: #FFFFFF;
+}
+@media screen and (min-width: 640px) and (max-width: 960px) {
+	.z_content-wrap .z_con-wrap h3{
+		font-size: 1.1em;
+	}
+	.z_content-wrap .z_con-wrap span{
+		font-size: 0.9em;
+		line-height: 1em;
+	}
+	.z_con-wrap{
+		width: 85%;
+	}
+	.z_con-con3{
+		padding-left:39%;
+	}
+	.z_con-con3 span{
+		width: 80%;
+	}
+	.z_con-con4{
+		padding-left:36%;
+	}
+	.z_con-con5 {
+    padding: 5.5em 0 8.375em;
+}
+/*设置最小块*/
+.z_con1, .z_con2, .z_con3, .z_con4, .z_con5 {
+    min-height:600px; 
+}
+
+.z_con-wrap {
+    min-height: 600px;
+}
+.z_con-con1 {
+    /* padding: 35% 0 20%; */
+    padding-top: 7em;
+    /* padding-top: 10em; */
+    padding-bottom: 0em;
+}
+.z_con-wrap span {
+    margin: 1.5em 0;
+}
+.z_con-con1 div {
+    padding-bottom: 3em;
+    margin-left: 2%;
+    /* margin-top: 10%; */
+    padding-top: 1.5em;
+}
+.z_con-con2 {
+    /* padding: 25% 0; */
+    padding: 10em 0;
+    z-index: 100;
+}
+.z_con-con3 {
+    z-index: 100;
+    /* padding: 30% 0 25% 32%; */
+    /* padding-bottom: 245px; */
+    padding-top: 8.625em;
+    padding-bottom: 10.35em;
+    padding-left: 13.5625em;
+}
+.z_con-con4 {
+    padding: 7em 0 6.125em 2.3125em;
+}
+.z_con-con5 {
+    padding: 7.5em 0 21.375em;
+}
+}
+@media screen and (max-width: 639px) {
+	
+	.z_content-wrap .z_con-wrap div h3{
+		font-size:0.9em;
+		line-height: 1.5em;
+	}
+	.z_content-wrap .z_con-wrap span{
+		font-size: 0.8em;
+		line-height: 1em;
+	}
+	.z_con-wrap{
+		width: 98%;
+	}
+	.z_top{
+		width: 10%;
+	}
+	.z_con-con1 div{
+		width: 70%;
+	}
+	.z_con-con1 span{
+		width: 75%;
+	}
+	.z_con-con2 span{
+		width: 75%;
+	}
+	.z_con-con2 div{
+		width: 75%;
+	}
+	.z_con-con3{
+		/*padding: 30% 0 25% 25%;*/
+	}
+	.z_con-con3 span{
+		width: 94%;
+	}
+	.z_con-con4{
+		padding-left: 0;
+	}
+	
+}
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+	#content {
+     margin-top: 0em; 
+}
+.z_con-con5 {
+    padding: 5.5em 0 8.375em;
+}
+/*设置最小块*/
+.z_con1, .z_con2, .z_con3, .z_con4, .z_con5 {
+    min-height: 350px; 
+}
+
+.z_con-wrap {
+    min-height: 350px;
+}
+.z_con-con1 {
+    /* padding: 35% 0 20%; */
+    padding-top: 2em;
+    /* padding-top: 10em; */
+    padding-bottom: 0em;
+}
+.z_con-wrap span {
+    margin: 1.5em 0;
+}
+.z_con-con1 div {
+    padding-bottom: 3em;
+    margin-left: 2%;
+    /* margin-top: 10%; */
+    padding-top: 1.5em;
+}
+.z_con-con2 {
+    /* padding: 25% 0; */
+    padding: 4em 0;
+    z-index: 100;
+}
+.z_con-con3 {
+    z-index: 100;
+    /* padding: 30% 0 25% 32%; */
+    /* padding-bottom: 245px; */
+    padding-top: 5.625em;
+    padding-bottom: 2.35em;
+    padding-left: 7.5625em;
+}
+.z_con-con4 {
+    padding: 2em 0 3.125em 1.3125em;
+    z-index: 100;
+}
+}
+@media only screen and (max-width:1024px ) {
+	.j_nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:4.2em;
+	z-index:999;
+	
+}
+}
+.z_top {
+    text-align: center;
+}
+</style>
+<body>
+    <!-- 导航界面 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="top">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-fixed-top"
+                    style="background-color: white; box-shadow:4px 1px 6px 0.5px rgba(0,0,0,.2) ">
+                    <div class="row container " style="text-align: center;  ">
+                        <div class="col-md-5 head " style="text-align: right;height: 50px;">
+                            <img style=" width: 130px; height: 50px; background-size: cover; padding: 10px 0 10px 0;"
+                                src="./img/shininglogo.png" alt="">
+                        </div>
+                        <div class="col-md-7 head" style="font-size: 16px; ">
+                            <div class="col-md-1 "> </div>
+                            <div class="col-md-1"><a href="./index.html">Home</a></div>
+                            <div class="col-md-2"><a href="./About.html">About</a></div>
+                            <div class="col-md-2"><a href="./Renderings.html">Renderings</a></div>
+                            <div class="col-md-2"><a href="./bim.html">BIM</a></div>
+                            <div class="col-md-2"><a href="./anumat.html">3D&nbsp;Animat</a></div>
+                            <div class="col-md-2"><a href="./contact.html">Contact</a></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <div class="nav container" style="padding-top: 50px;">
+            <img src="./img/line_yellow.png" alt="">
+            <span>OUR&nbsp;SERVICE</span>
+            <img src="./img/line_yellow.png" alt="">
+        </div>
+<!-- 中间部分 -->
+    <div class="content">
+            <div class="z_content-wrap">
+                <div class="z_con1 scrollt">
+                    <img src="./img/BIM-bg1.png" alt="" />
+                    <div class="z_con-wrap">
+                        <div class="z_con-con1">
+                            <h3>1. MODEL COMPLETION</h3>
+                            <span>Establishing and creating the visible and multi-dimension Architecture, Structural and MEP model.</span>
+                            <div>
+                                <img src="./img/BIM-p1-1.png" alt="" />
+                                <img src="./img/BIM-p1-2.png" alt="" />
+                                <img src="./img/BIM-p1-3.png" alt="" />
+                            </div>
+                        </div>
+                        <img src="./img/building1-half-t.png" alt="" class="building1-half-t" />
+                    </div>
+                </div>
+                <div class="z_con2 scrollt">
+                    <img src="./img/BIM-bg2.png" alt="" />
+                    <div class="z_con-wrap">
+                        <div class="z_con-con2">
+                            <h3>2. CLASH DETECTION</h3>
+                            <span>Completing the clash detection among various design parties,engineers and even different organisations in con struction drawings.</span>
+                            <div>
+                                <img src="./img/BIM-p2-1.jpg" alt="" />
+                                <img src="./img/BIM-p2-2.jpg" alt="" />
+                            </div>
+                        </div>
+                        <img src="./img/building1-half-b.png" alt="" class="building1-half-b" />
+                    </div>
+                </div>
+                <div class="z_con3 scrollt">
+                    <img src="./img/BIM-bg3.png" alt="" />
+                    <div class="z_con-wrap">
+                        <div class="z_con-con3">
+                            <h3>3. MEP INTEGRATION</h3>
+                            <span>Profoundly completing the pipeline integration, design coordination and intra-organisational cooperation between Plumbing, HVAC and Electrical engineering.</span>
+                            <div>
+                                <img src="./img/BIM-p3-1.jpg" alt="" />
+                                <img src="./img/BIM-p3-2.jpg" alt="" />
+                            </div>
+                        </div>
+                        <img src="./img/building2-half-t.png" alt="" class="building2-half-t" />
+                    </div>
+                </div>
+                <div class="z_con4 scrollt">
+                    <img src="./img/BIM-bg4.png" alt="" />
+                    <div class="z_con-wrap">
+                        <div class="z_con-con4">
+                            <h3>4. CURTAIN WALL REMEDYING</h3>
+                            <span>Creating the abnormity wall based on parametric design tools, and completing detailed curtain wall nodes visibly.</span>
+                            <div>
+                                <img src="./img/BIM-p4-1.jpg" alt="" />
+                                <img src="./img/BIM-p4-2.jpg" alt="" />
+                            </div>
+                        </div>
+                        <img src="./img/building2-half-b.png" alt="" class="building2-half-b" />
+                        <img src="./img/building3-half-t.png" alt="" class="building3-half-t" />
+                    </div>
+                </div>
+                <div class="z_con5 scrollt">
+                    <img src="./img/BIM-bg5.png" alt="" />
+                    <div class="z_con-wrap">
+                        <div class="z_con-con5">
+                            <h3>5. BIM CONSULTING</h3>
+                            <span>To help you to precisely know what is BIM? How BIM use? When and who is suitably to implement BIM? </span>
+                        </div>
+                        <img src="./img/building3-half-b.png" alt="" class="building3-half-b" />
+                    </div>
+                </div>
+            </div>
+            <div class="z_top scrollt">
+                <img src="./img/top.png" alt="" />
+            </div>
+        </div>
+        
+
+
+    <!-- 底部 -->
+    <div class="nav container" style="padding-top: 50px;">
+        <img src="./img/line_yellow.png" alt="">
+        <span>CONTACT&nbsp;US</span>
+        <img src="./img/line_yellow.png" alt="">
+    </div>
+    <div class="nav container">
+        <p>Email：eric@shining365.com</p>
+        <p>Mobile&nbsp;Phone：86&nbsp;138&nbsp;1690&nbsp;3400</p>
+        <p>Tel：+86&nbsp;21&nbsp;6598&nbsp;6866-304+86&nbsp;21&nbsp;6598&nbsp;3188-304</p>
+
+
+
+    </div>
+
+    <div class="Bottom">
+        <p>Copyright © 1998-2015 shining Group</p>
+    </div>
+
+</body>
+
+</html>
