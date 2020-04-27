@@ -1,0 +1,22 @@
+1. 桌面上创建 文件夹  aaa
+2. cd 到 aaa 文件夹中
+3. npm init  ----> 让普通的aaa文件夹 变成一个项目文件夹
+ 3.1 请敲回车键
+4. 第3步成功之后, 在aaa文件夹中 能看到一个 package.json文件
+5. 在 VScode 打开 aaa 文件夹
+6. 查看 package.json文件, 发现 main: index.js
+7. 在 aaa 中 创建一个 index.js 文件
+8. 终端 安装 koa 框架
+ 8.1 cnpm install koa --save
+ 8.2 --save: 把安装信息保存到 package.json文件中
+9. 打开百度
+10. 搜索 koa
+11. 进入koa官网
+12. 复制一段 hello world 代码
+13. 粘贴进 index.json文件中
+14. 在倒数第二行增加一个打印
+ 14.1 console.log("服务器启动在3000端口上....")
+15. 保存index.js
+16. 终端 执行命令  node index.js
+17. 浏览器访问  localhost:3000
+18. 界面显示 hello world , 代表服务器启动成功
