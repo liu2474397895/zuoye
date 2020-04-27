@@ -1,0 +1,102 @@
+.all_warp .Commodity_type {
+    color: rgba(100, 100, 100, 0.8);
+    padding: 50px 0;
+    border-top: 1px solid rgba(100, 100, 100, 0.2);
+
+    text-align: center;
+}
+
+.all_warp .Commodity_type span {
+
+    padding: 0 20px 0 20px;
+
+}
+
+.all_warp .all_bom {
+    text-align: center;
+
+}
+
+.all_warp .all_bom span {
+    display: inline-block;
+    width: 24px;
+    padding: 10px;
+
+}
+
+.all_warp .all_bom .one {
+    background-color: rgb(104, 104, 129);
+    color: white;
+}
+
+/*商品详情*/
+.details_warp {
+    display: none;
+    
+    border-top: 1px solid rgba(100, 100, 100, 0.2);
+}
+
+.details_warp>.det,
+.show {
+    padding-top: 50px;
+    float: left;
+}
+
+.details_warp .show {
+    width: 70%;
+    border-right: 1px solid rgba(100, 100, 100, 0.2);
+}
+
+.details_warp .show img {
+    width: 100%;
+
+}
+
+.det {
+    width: 20%;
+    padding-left: 70px;
+    /* background-color:  red; */
+}
+
+.det .list li {
+    width: 48%;
+    float: left;
+    list-style: none;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.list li .left span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list li .one {
+    color: rgba(100, 100, 100, 0.8);
+}
+.det .mon {
+    color: rgba(100, 100, 100, 0.8);
+    font-size: 12px;
+}
+.det .text {
+    padding-top: 30px;
+}
+.det .text span{
+    display: inline-block;
+    background-color: rgba(100, 100, 100, 0.2);
+}
+.det .list li img {
+    width: 100%;
+
+}
+
+.det .list .ls{
+    padding-left: 5px;
+
+}
+.clear{
+    width: 100%;
+    border-top:1px solid rgba(100, 100, 100, 0.2);
+    clear:both;
+}

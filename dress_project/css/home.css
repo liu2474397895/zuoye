@@ -1,0 +1,337 @@
+
+/* 统一样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+/*头部标题样式*/
+.home_warp .head {
+    margin: 0 auto;
+    text-align: center;
+    display:block;
+    padding: 50px 0 30px 0;
+}
+
+.home_warp .head p {
+    font-size: 30px;
+    font-family: 'Times New Roman';
+}
+
+/* 头部列表 */
+.head .title {
+    padding: 20px 0 20px 0;
+}
+
+.head .title span {
+    padding: 0 10px 10px 10px;
+
+}
+
+.head .title a {
+    padding-bottom: 6px;
+    color: rgba(100, 100, 100, 0.8);
+    text-decoration: none;
+}
+
+/* a:ac {
+    border-bottom: 2px solid rgba(100, 100, 100, 0.5);
+} */
+
+.title .drop {
+    border: 0px;
+    width: 100px;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.title .drop option {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+/*中间灰色部分*/
+
+.main {
+    background-color: rgb(248, 248, 248);
+}
+
+/*轮播*/
+.main .banner img {
+    width: 100%;
+
+}
+
+/*列表文字*/
+.main .text {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.text .big_title {
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+}
+
+.text p {
+    color: rgb(209, 209, 209);
+}
+
+.main .Commodity_type {
+    text-align: center;
+    margin: 20px 0 20px 0;
+
+}
+
+.main .Commodity_type span {
+    color: rgba(100, 100, 100, 0.8);
+    padding: 0 20px 0 20px;
+
+}
+
+.Commodity_type .one {
+    font-size: 12px;
+}
+
+/*商品列表图片*/
+.Commodity_list {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.Commodity_list ul li {
+    float: left;
+    width: 30%;
+    list-style: none;
+    padding: 0 4% 4% 0;
+
+
+}
+
+.Commodity_list li img {
+    width: 100%;
+
+}
+
+/* 列表底部文字 */
+.Commodity_list .img_bot {
+    font-size: 12px;
+    background-color: white;
+    height: 70px;
+    position: relative;
+    bottom: 6px;
+
+}
+
+.Commodity_list .img_bot .left {
+    padding-top: 20px;
+
+}
+
+.Commodity_list .img_bot .left .one {
+    color: rgb(172, 172, 172);
+    font-size: 10px;
+}
+
+.Commodity_list .img_bot .right {
+    position: relative;
+    color: rgb(44, 44, 44);
+    right: 10px;
+    bottom: 22px;
+    float: right;
+    padding-left: 5px;
+    border-left: 1px solid rgb(212, 211, 211);
+    color: rgb(212, 211, 211);
+}
+
+.btn {
+    text-align: center;
+    padding: 40px 0 80px 0;
+}
+
+/*商品介绍部分*/
+.middle {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.about {
+
+    display: flex;
+}
+
+.about .left {
+    flex: 1;
+}
+
+
+/*右边文字*/
+.about .right {
+    flex: 1;
+    text-align: center;
+    padding-top: 200px;
+    width: 90%;
+}
+
+.about .right .txt {
+    padding-bottom: 10px;
+    color: rgb(206, 206, 206);
+}
+
+.about .right span {
+    color: rgb(172, 172, 172);
+    font-size: 12px;
+}
+
+.about .right .log {
+    margin-top: 50px;
+    width: 40px;
+    height: 10px;
+}
+
+.middle {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.middle .title {
+    padding-top: 50px;
+}
+
+.middle span {
+
+    color: rgb(172, 172, 172);
+}
+
+/*商品详情*/
+.sermce {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+    padding-bottom: 50px;
+}
+
+
+.sermce ul {
+    display: flex;
+}
+
+.sermce ul li {
+    flex: 1;
+    list-style: none;
+    border-left: 1px solid rgba(20, 20, 20, 0.1);
+    padding: 0 4% 0 4%;
+}
+
+.sermce p {
+    font-size: 40px;
+    color: rgb(172, 172, 172);
+}
+
+.sermce span {
+    font-size: 14px;
+}
+
+.sermce .kong {
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+
+    color: rgb(172, 172, 172);
+}
+
+.sermce .one {
+    display: inline-block;
+    padding: 10px 0 10px 0;
+}
+
+/*底部logo*/
+.bottom .logo {
+    padding: 50px 0 50px 0;
+    width: 94%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+.bottom .logo div {
+
+    flex: 1;
+}
+
+/*联系我们*/
+.home_warp .box {
+    padding: 50px 0 100px 0;
+    background-color: rgb(248, 248, 248);
+}
+
+.contact {
+
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contact .left {
+    flex: 1;
+}
+
+.contact span {
+    color: rgb(182, 181, 181);
+}
+
+.contact .left .text {
+    font-size: 20px;
+    color: black;
+}
+
+.contact .mid {
+    flex: 1;
+}
+
+.contact .mid {
+    flex: 1;
+}
+
+.contact .mid div {
+    float: left;
+    padding: 50px 30px 0 0;
+}
+
+.contact .right {
+    flex: 1;
+}
+
+.contact .right .t_box {
+    padding-top: 50px;
+
+
+}
+.right .t_box div{
+   float: left;
+    font-size: 12px;
+}
+/*报备*/
+.Reported{
+    text-align: center;
+    color:rgb(182, 181, 181);
+    padding:50px 0 ;
+    font-size: 12px;
+}
+
+/*显示隐藏界面*/
+.all_warp{
+    display: none;
+}
+.bottom{
+    display: block;
+}

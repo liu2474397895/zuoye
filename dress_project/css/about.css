@@ -1,0 +1,169 @@
+        /*头部文字*/
+        .about_warp {
+            padding-top: 100px;
+
+            display: none;
+            margin: 0 auto;
+        }
+
+        .about_warp .abs {
+            margin: 0 auto;
+            width: 63%;
+            border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+        }
+
+        .about_warp .abs span {
+            display: inline-block;
+            font-size: 12px;
+            padding-bottom: 30px;
+            color: rgba(100, 100, 100, 0.8);
+
+        }
+
+        .about_warp span {
+            font-size: 12px;
+            color: rgba(100, 100, 100, 0.8);
+        }
+
+        .about_warp .abs .abo {
+            color: black;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .about_warp .eng {
+            font-size: 12px;
+        }
+
+        .about_warp p {
+            font-size: 50px;
+
+
+        }
+
+        .about_warp .la {
+            color: rgba(100, 100, 100, 0.2);
+            font-size: 16px;
+        }
+
+        /*年份列表*/
+        .year_list {
+            padding: 50px 0;
+            /* width: 90%; */
+            margin: 0 auto;
+
+        }
+
+        .year_list ul li {
+            list-style: none;
+            float: left;
+            text-align: center;
+            width: 25%;
+        }
+
+        .year_list ul li .number {
+            font-size: 40px;
+            font-weight: 900;
+            color: black;
+        }
+
+        .services {
+            margin: 0 auto;
+            width: 63%;
+        }
+
+        .services .abo {
+            color: black;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .services .text {
+            padding: 150px 0 100px 0;
+        }
+
+        /*服务列表*/
+        .services_list ul li {
+            list-style: none;
+            float: left;
+            text-align: center;
+            width: 22%;
+            padding-right: 3%;
+        }
+
+        .services_list ul li img {
+            padding: 10px;
+        }
+
+        /*底部联系方式*/
+        .about_warp .contact {
+            margin: 300px 0 100px 0;
+            width: 100%;
+            background-color: rgb(248, 248, 248);
+
+        }
+
+        .contact .downs {
+            width: 63%;
+            margin: 0 auto;
+            padding: 50px 0;
+            display: flex;
+          
+        }
+
+        .contact span {
+            padding: 0;
+            border: 0;
+        }
+
+        .contact .left p {
+            font-size: 20px;
+
+        }
+
+        .contact .downs .left {
+            flex: 2;
+          
+        }
+
+        .contact .downs .cott {
+           
+            flex: 1;
+        }
+
+        .contact .downs .rightt {
+        
+            flex: 1;
+        }
+        .contact .downs>.cott,.rightt span{
+    color: black;
+}
+.head .abouts {
+    position: relative;
+
+
+}
+
+.title .head_list {
+    position: absolute;
+    top: 130px;
+    right: 686px;
+    text-align: center;
+    width: 120px;
+    font-size: 16px;
+    display: inline-block;
+    /* border: 1px solid rgba(100, 100, 100, 0.1); */
+    display: none;
+}
+
+/* 
+.about_warp .head_list .one {
+    background-color: #F8F8F8;
+} */
+
+.title .head_list li {
+    list-style: none;
+    padding: 5px;
+    border: 1px solid rgba(100, 100, 100, 0.1);
+
+}
