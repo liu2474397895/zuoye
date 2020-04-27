@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/password.css">
+    <!-- <link rel="stylesheet" href="./js/jqueryHdyz/css/user.css"> -->
+    <title>Document</title>
+
+    <style>
+        .top .pas_txt a {
+            color: black;
+
+            text-decoration: none;
+            color: rgb(153, 153, 153);
+
+        }
+
+        .top .hav_txt {
+            font-weight: 700;
+            margin-left: 22px;
+            color: black;
+            border-bottom: 2px solid black;
+            padding-bottom: 17px;
+        }
+
+        .form-inline-input input,
+        .code-box {
+            padding: 0 10px;
+            width: 356px;
+            height: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 1px black;
+            background: rgba(0, 0, 0, 0.16);
+            border: 0;
+            border-radius: 5px;
+            outline: none;
+            margin-top: 20px;
+            box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+        }
+
+        .code-box {
+            position: relative;
+        }
+
+        .code-box p {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: -16px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 5px;
+        }
+
+        .code-box span {
+            display: block;
+            position: absolute;
+            left: 0;
+
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 5px;
+        }
+
+        .code-box span {
+            width: 20px;
+            background-color: #fff;
+            font-family: "宋体";
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .code-box p {
+            width: 0;
+            background-color: #FFFF99;
+            overflow: hidden;
+            text-indent: -20px;
+
+            transition: background 1s ease-in;
+        }
+
+        .code-box .code-input {
+            display: none;
+        }
+
+        form input {
+            width: 78%;
+            position: relative;
+            left: 29px;
+        }
+
+        select {
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            width: 60px;
+            height: 40px;
+            background-color: rgb(241, 240, 240);
+        }
+
+        .bottom {
+            position: relative;
+            top: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pass_wrap">
+        <div class="nav">
+            <div class="nav_left">
+                <img src="./img/登录素材.svg" alt="">
+            </div>
+            <div class="nav_right">
+                <span>小z喊话：加入网站我们一起肩并肩！！！</span>
+            </div>
+        </div>
+
+        <div class="subject">
+            <div class="top">
+                <span class="pas_txt"><a href="./password.html">密码登录</a></span>
+                <span class="hav_txt">短信登陆</span>
+                <a href="./code.html"><img src="./img/wx_l.svg" alt=""></a>
+                <div></div>
+            </div>
+
+            <form action="">
+                <select>
+                    <option value="volvo">+86</option>
+                    <option value="saab">+110</option>
+                    <option value="opel">+120</option>
+                    <option value="audi">119</option>
+                </select>
+                <input type="text" placeholder="手机号/邮箱"><br>
+                <label class="form-inline">
+                    <div class="form-inline-input">
+                        <div class="code-box" id="code-box">
+                            <input type="text" name="code" class="code-input" />
+                            <p></p>
+                            <span style="border:1px solid black">>></span>
+                        </div>
+                    </div>
+                </label>
+                <button>登陆</button>
+            </form>
+
+            <div class="check">
+                <input class="checkbox" type="checkbox" name="" id="" value="">
+                <span>下次自动登陆</span>
+                <span class="right">
+                    <span>忘记密码</span>
+                    <span>|</span>
+                    <span>注册</span>
+                </span>
+
+            </div>
+            <div class="bottom">
+                <p>第三方账号登陆</p>
+                <div class="wechat" style="margin: 0;"><img src="./img/wechat.png" alt=""></div>
+                <div class="sina"> <img src="./img/weibo.png" alt=""></div>
+                <div class="tencent"><img src="./img/qq.png" alt=""></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="./js/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="./js/jqueryHdyz/js/login.js"></script>
+<script src="./js/bootstrap_组件_and_js/"></script>
+<script>
+
+    window.addEventListener('load', function () {
+
+        //code是后台传入的验证字符串
+        var code = "jsaidaisd656",
+            codeFn = new moveCode(code);
+
+        //获取当前的code值
+        //console.log(codeFn.getCode());
+
+        //改变code值
+        //code = '46asd546as5';
+        //codeFn.setCode(code);
+
+        //重置为初始状态
+        //codeFn.resetCode();
+    });
+</script>
+
+</html>
