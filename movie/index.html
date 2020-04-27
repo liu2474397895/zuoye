@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电影网站</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?fjh5do');
+            src: url('fonts/icomoon.eot?fjh5do#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?fjh5do') format('truetype'),
+                url('fonts/icomoon.woff?fjh5do') format('woff'),
+                url('fonts/icomoon.svg?fjh5do#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <!-- 导航条 -->
+        <header>
+            <div class="logo">
+                <img src="./images/logo/logo.png" alt="左上角图标">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a id="home" href="javascript:;">首页</a><br>
+                        <div class="one"></div>
+                    </li>
+                    <li>
+                        <a id="mv" href="javascript:;">电影</a>
+                        <br>
+                        <div class="two"></div>
+                    </li>
+                    <li>
+                        <a id="list" href="javascript:;">系列</a>
+                        <br>
+                        <div class="three"></div>
+                    </li>
+                    <li>
+                        <a id="my" href="javascript:;">我的</a>
+                        <br>
+
+                        <div class="four"></div>
+                    </li>
+                    <li class="mark_logo">
+                        <a href="javascript:;"></a>
+                        <br>
+
+                    </li>
+                    <li class="mark_logo">
+                        <a href="javascript:;"></a>
+                        <br>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 轮播图 -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="./images/show/banner.jpg" class="img-responsive" alt="...">
+                    <div class="film_details">
+                        <span>播放时长51分钟</span><br>
+                        <div class="score">
+                            <span class="stars_logo"></span> <span>7.5</span>
+                        </div>
+                        <span>第</span> <span class="red_text">14</span> <span>集，</span><span>第</span> <span
+                            class="red_text">8</span> <span>季，真相意味着什么?</span>
+                        <h2>行尸走肉</h2>
+                        <p>随着僵尸越来越多，同伴越来越少，凯罗尔跑进森林中与僵尸展示激烈打斗...</p>
+                        <p>瑞克和摩根发现自己竟然进入僵尸包围圈..</p>
+                        <div class="play_btn btn">
+                            <span> 观看</span>
+                        </div>
+                        <div class="add_btn btn">
+                            <span>添加</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/show/banner.jpg" alt="...">
+                    <div class="film_details">
+                        <span>播放时长51分钟</span><br>
+                        <div class="score">
+                            <span class="stars_logo"></span> <span>7.5</span>
+                        </div>
+                        <span>第</span> <span class="red_text">14</span> <span>集，</span><span>第</span> <span
+                            class="red_text">8</span> <span>季，真相意味着什么?</span>
+                        <h2>行尸走肉</h2>
+                        <p>随着僵尸越来越多，同伴越来越少，凯罗尔跑进森林中与僵尸展示激烈打斗...</p>
+                        <p>瑞克和摩根发现自己竟然进入僵尸包围圈..</p>
+                        <div class="play_btn btn">
+                            <span> 观看</span>
+                        </div>
+                        <div class="add_btn btn">
+                            <span> 添加</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/show/banner.jpg" alt="...">
+                    <div class="film_details">
+                        <span>播放时长51分钟</span><br>
+                        <div class="score">
+                            <span class="stars_logo"></span> <span>7.5</span>
+                        </div>
+                        <span>第</span> <span class="red_text">14</span> <span>集，</span><span>第</span> <span
+                            class="red_text">8</span> <span>季，真相意味着什么?</span>
+                        <h2>行尸走肉</h2>
+                        <p>随着僵尸越来越多，同伴越来越少，凯罗尔跑进森林中与僵尸展示激烈打斗...</p>
+                        <p>瑞克和摩根发现自己竟然进入僵尸包围圈..</p>
+                        <div class="play_btn btn">
+                            <span> 观看</span>
+                        </div>
+                        <div class="add_btn btn">
+                            <span> 添加</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- 最近流行 -->
+    <section class="box">
+        <div class="popular_warp">
+            <div class="parade">
+                <div class="left">
+                    <img src="./images/logo/up1.png" alt="">
+                    <span>最近游行的</span>
+                    <div class="dot"></div>
+                </div>
+                <div class="right">
+                    <span><img src="./images/logo/heat.png" alt="">&nbsp;流行</span>
+                    <span>&nbsp;首映</span>
+                    <span>&nbsp;最近加入</span>
+                </div>
+            </div>
+            <div class="type_list">
+                <div><a href="javascript:;">动作</a></div>
+                <div><a href="javascript:;">冒险</a></div>
+                <div><a href="javascript:;">动画</a></div>
+                <div><a href="javascript:;">传记</a></div>
+                <div><a href="javascript:;">犯罪</a></div>
+                <div><a href="javascript:;">喜剧</a></div>
+                <div><a href="javascript:;">记录</a></div>
+                <div><a href="javascript:;">戏剧</a></div>
+                <a href="javascript:;" class="page_text"></a>
+            </div>
+
+        </div>
+
+        <div class="mov_show">
+
+            <ul class="sliding">
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li04.jpg" alt=""></a>
+                    <div class="movie_review">
+                        <p>罗宾</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 7.3</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/filem_li01.jpg" alt=""></a>
+                    <div class="movie_review">
+                        <p>环太平洋2</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 7.1</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/filem_li02.jpg" alt=""></a>
+                    <div class="movie_review">
+                        <p>星球大战</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 5.8</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/filem_li03.jpg" alt=""></a>
+                    <div class="movie_review">
+                        <p>红色麻雀</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 7.2</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/filem_li04.jpg" alt=""></a>
+                    <div class="movie_review">
+                        <p>古墓丽影</p>
+                        <span>2018</span>
+                        <span style="color:#db1623;"></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 6.6</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/filem_li05.jpg" alt=""></a>
+                    <div class="movie_review">
+                        <p>寻名记</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 6.7</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/filem_li06.jpg" alt=""></a>
+                    <div class="movie_review">
+                        <p>侏罗纪世界2</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 8.3</span>s
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li09.jpg" alt=""></a>
+                    <div class="movie_review">
+                        <p>波西米</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 7.3</span>s
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="left_page">
+            <span style="font-size:37px;color: white"></span>
+        </div>
+        <div class="right_page">
+            <span style="font-size:37px;color: white"></span>
+        </div>
+    </section>
+    <!-- 电影列表 -->
+    <section class="film_box">
+        <div class="popular_warp" style="padding:0;">
+            <div class="parade">
+                <div class="left">
+                    <img src="./images/logo/FILMS ICON.png" alt="">
+                    <span>电影系列</span>
+                    <div class="dot"></div>
+                </div>
+                <div class="right">
+                    <span><img src="./images/logo/SERIES ICON.png" alt="">&nbsp;系列</span>
+                    <span>&nbsp;原创</span>
+                    <span>&nbsp;搜索</span>
+                </div>
+            </div>
+            <div class="type_list">
+                <div><a href="javascript:;">动作</a></div>
+                <div><a href="javascript:;">冒险</a></div>
+                <div><a href="javascript:;">动画</a></div>
+                <div><a href="javascript:;">传记</a></div>
+                <div><a href="javascript:;">犯罪</a></div>
+                <div><a href="javascript:;">喜剧</a></div>
+                <div><a href="javascript:;">记录</a></div>
+                <div><a href="javascript:;">戏剧</a></div>
+                <a href="javascript:;" class="page_text"></a>
+                <span style="font-size: 18px;">排序：</span>
+                <div><a href="javascript:;">最新</a></div>
+                <div><a href="javascript:;">年 &nbsp;</a></div>
+                <div><a href="javascript:;">A-Z &nbsp;</a></div>
+
+            </div>
+            <div class="rating_bar">
+                <span style="color:#ffb400;"></span>
+                <div class="left_bar"></div>
+                <div class="round_bar"></div>
+                <div class="right_bar"></div>
+                <span style="color:white;">5.0</span>
+            </div>
+
+        </div>
+        <div class="mov_show">
+            <ul class="film_show">
+                <li>
+                    <a href="javascript:;">
+                        <img  id="img"src="./images/show/newest_li01.jpg" alt="">
+
+                    </a>
+                    <div class="video_part video_one">
+                        <a href="javascript:;">
+                            <img src="./images/logo/video.png" alt=""></a>
+                        <div id="text">
+                            <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                            <br><span>Feature adaptation of Beatrix Potter's</span>
+                            <br><span>classic tale of a rebellious rabbit</span>
+                            <br><span>trying to sneak into a farmer's</span>
+                            <span>vegetable garden.</span>
+                        </div>
+                        <div class="btn">
+                            <span></span>
+                            <span>WATCH</span>
+                        </div>
+                        <div class="down">
+                            <img src="./images/logo/FAVORITE ICON.png" alt="">
+                            <span></span>
+                            <img src="./images/logo/WATCHED ICON.png" alt="">
+                        </div>
+                    </div>
+                    <div class="movie_review">
+                        <p>死侍</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 8.1</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li02.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>梅格</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 6.4</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li03.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>十月</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 8.0</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li04.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>超级战士2</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 7.7</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li05.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>15:17到巴黎</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 5.0</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li06.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>狂暴</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 6.5</span>
+                    </div>
+                </li>
+                <li>
+                   
+                    <a href="javascript:;"><img src="./images/show/newest_li07.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>迷宫流道</p>
+                        <span>2018</span>
+                        <span style="color:#db1623;"></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 6.3</span>
+                    </div>
+                </li>
+                <li>
+                    
+                    <a href="javascript:;"><img src="./images/show/newest_li08.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>第一次净化</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 6.1</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li09.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>罗宾</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 7.3</span>
+                    </div>
+                </li>
+                <li>
+          
+                    <a href="javascript:;"><img src="./images/show/newest_li10.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>毒液</p>
+                        <span>2018</span>
+                        <span style="color:#db1623;"></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 7.2</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li18.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>比特兔</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 6.6</span>
+                    </div>
+                </li>
+                <li>
+                    
+                    <a href="javascript:;"><img src="./images/show/newest_li11.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>侏罗纪世界2</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 8.3</span>
+                    </div>
+                </li>
+                <div class="play_warp">
+                    <div class="video">
+                        <div class="video_text">
+                            <p>侏罗纪世界：堕落王国（2018）</p>
+                            <img src="./images/logo/EYE.png" alt="">
+                            <span>观看</span>
+                        </div>
+                        <div class="video_ico">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="big_vodeo">
+                            <img src="./images/show/mov_01.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="video_progress">
+                            <div class="down_box">
+                                <img src="./images/logo/PAUSE ICON.png" alt="">
+                                <img style="margin-right: 40px;" src="./images/logo/BACK -10 SEC.png" alt="">
+                                <span>28:04</span>
+                                <div class="lefts_bar"></div>
+                                <div class="rounds_bar"></div>
+                                <div class="rights_bar"></div>
+                                <span>-01:40:06</span>
+                                <img src="./images/logo/SUBTITLES.png" alt="">
+                                <img src="./images/logo/SOUND.png" alt="">
+                                <img src="./images/logo/FULL SCREEN.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_details">
+                        <div class="big_vodeo">
+                            <img src="./images/logo/BACKGROUND.png" alt="">
+                        </div>
+                        <div class="film_details">
+                            <div class="text">
+                                <span>13+</span>
+                            </div><br>
+                            <span>播放时长160分钟</span><br>
+                            <div class="score">
+                                <span class="stars_logo"></span> <span>8.3</span>
+                            </div>
+                            &nbsp;<p style="display: inline-block;"> 动作 / 冒险 / 科幻</p>
+                            <h2>侏罗纪公园</h2>
+                            <p>当岛上休眠火山开始咆哮时，欧文和克莱尔发起了一场拯救剩余的运动</p>
+                            <p>恐龙从灭绝的谜底即将</p>
+                            <div class="play_btn btn">
+                                <span> 观看</span>
+                            </div>
+                            <div class="add_btn btn">
+                                <span> 添加</span>
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div>
+                                <a id="default" href="javascript:;">默认</a>
+                                <div id="round" class="one"></div>
+                            </div>
+                            <div>
+                                <a id="hot" herf="javascript:;">最热</a>
+                                <div id="round" class="two"></div>
+                            </div>
+                            <div>
+                                <a id="want" href="javascript:;">相似</a>
+                                <div id="round" class="three"></div>
+                            </div>
+                            <div>
+                                <a id="dis" href="javascript:;">评论</a>
+                                <div id="round" class="four"></div>
+                            </div>
+                            <div>
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li12.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>哑巴</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 5.4</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li13.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>派对人生</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 5.5</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li14.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>蚁人</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 6.9</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li15.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>太阳之日</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE.png" alt="">
+                        <span class="score"> 7.0</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li16.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>通勤者</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 6.3</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/show/newest_li17.jpg" alt=""></a>
+                    <!-- <div class="video_part">
+                            <a href="javascript:;">
+                                <img src="./images/logo/video.png" alt=""></a>
+                            <div id="text">
+                                <p style="display: inline-block;">Peter Rabbit</p><span>1h 35m</span>
+                                <br><span>Feature adaptation of Beatrix Potter's</span>
+                                <br><span>classic tale of a rebellious rabbit</span>
+                                <br><span>trying to sneak into a farmer's</span>
+                                <span>vegetable garden.</span>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                                <span>WATCH</span>
+                            </div>
+                            <div class="down">
+                                <img src="./images/logo/FAVORITE ICON.png" alt="">
+                                <span></span>
+                                <img src="./images/logo/WATCHED ICON.png" alt="">
+                            </div>
+                        </div> -->
+                    <div class="movie_review">
+                        <p>不可能的任务</p>
+                        <span>2018</span>
+                        <span></span>
+                        <img src="./images/logo/EYE2.png" alt="">
+                        <span class="score"> 7.6</span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <footer>
+        <div><a href="#"></a></div>
+    </footer>
+</body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/index.js"></script>
+
+
+</html>

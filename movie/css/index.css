@@ -1,0 +1,693 @@
+      /*全局样重置式*/
+      * {
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+   
+    span {
+        font-family: 'icomoon';
+    }
+
+    body {
+        background-color: #151518;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        font-family: 'icomoon';
+        color: #4c4c53;
+        text-decoration: none;
+
+
+    }
+    li a{
+        display:block;
+    }
+    li img{
+        border-radius: 10px;
+    }
+
+    ul li>span {
+        color: #4c4c53;
+    }
+
+   
+
+    img {
+        vertical-align: middle;
+    }
+
+    /*导航条样式*/
+
+    header {
+        padding-top: 30px;
+        border-bottom: 1px solid #252527;
+        position: absolute;
+        z-index: 9999;
+    }
+
+    header nav a:hover {
+        text-decoration: none;
+        color: #ffff;
+      
+    }
+    header nav a:active{
+        color: #4c4c53;
+        text-decoration: none;
+    }
+    header nav a:visited{
+        color: #4c4c53;
+        text-decoration: none;
+    }
+
+    .logo,
+    nav {
+        float: left;
+    }
+
+    .logo {
+        padding: 0 0 30px 60px;
+    }
+
+    nav {
+        padding-left: 656px;
+    }
+
+    nav ul li {
+        font-size: 0px;
+        float: left;
+    }
+
+    nav ul li a {
+        margin-right: 24px;
+        font-size: 23px;
+        padding: 30px;
+
+    }
+
+    nav ul li div {
+        display: none;
+        margin: 10px 0 0 47px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid red;
+        border-radius: 50%;
+        background-color: #db1623;
+    }
+
+    /* nav ul li:hover div {
+        display: block;
+    } */
+
+    .mark_logo a {
+
+        color: #ffff;
+    }
+
+    header::after {
+        content: "";
+        display: block;
+        height: 0px;
+        line-height: 0px;
+        font-size: 0px;
+        clear: both;
+    }
+   
+
+    /*轮播*/
+    .item {
+
+        width: 100%;
+        height: 886px;
+        position: relative;
+        overflow: hidden;
+        vertical-align: middle;
+
+    }
+
+    .item img {
+        width: 1920px;
+        position: absolute;
+        left: 50%;
+        margin-left: -960px;
+
+        z-index: -9999;
+
+    }
+
+    .carousel-indicators .active {
+        width: 64px;
+
+        height: 2px;
+
+    }
+
+    .carousel-indicators li {
+        background-color: #313133;
+        border-radius: 20px;
+        border: #313133;
+        width: 64px;
+        height: 2px;
+    }
+
+    /*轮播文字*/
+    .film_details {
+        z-index: 9999;
+        padding: 248px 0 0 248px;
+        color: #d3d3d4;
+    }
+
+    .film_details span {
+        font-size: 17px;
+
+    }
+
+    .film_details .score {
+        padding-top: 40px;
+        font-size: 22px;
+        display: inline-block;
+    }
+
+    .stars_logo {
+        font-family: 'icomoon';
+        color: #ffb400;
+    }
+
+    .red_text {
+        color: #db1623;
+    }
+
+    .film_details p {
+        color: #a6a6a6;
+        font-size: 18px;
+
+    }
+
+    h2 {
+        font-size: 72px;
+        padding: 32px 0 52px 0;
+    }
+
+    .film_details .btn {
+        width: 154px;
+        height: 40px;
+        border-radius: 100px;
+
+        /* padding-top: 20px; */
+        margin: 60px 42px 0 0;
+        border: 0;
+
+    }
+
+    .film_details .play_btn {
+
+        font-size: 23px;
+        background-color: #db1623;
+    }
+
+    .film_details .add_btn {
+        font-size: 23px;
+        background-color: black;
+    }
+
+    /*电影导航条*/
+    .popular_warp {
+        padding: 80px 82px 0 82px;
+    }
+
+    .parade {
+        border-bottom: 1px solid #28282f;
+        padding-bottom: 20px;
+    }
+
+    .parade::after {
+        content: "";
+        display: block;
+        height: 0px;
+        line-height: 0px;
+        font-size: 0px;
+        clear: both;
+    }
+
+    .parade .left,
+    .right {
+        float: left;
+    }
+
+    .parade .left img {
+        vertical-align: top;
+        margin-top: 6px;
+    }
+
+    .parade .right {
+        padding-left: 526px;
+        margin-top: 10px;
+    }
+
+    .parade .left span {
+        font-size: 27px;
+        color: white;
+    }
+
+    .parade .right span {
+        font-size: 18px;
+        padding-left: 104px;
+    }
+
+    .dot {
+        margin: 20px 0 0 90px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid red;
+        border-radius: 50%;
+        background-color: #db1623;
+    }
+
+    /*类型目录*/
+    .type_list div a {
+        text-decoration: none;
+        font-size: 18px;
+        padding: 20px;
+        color: white;
+    }
+
+    .type_list div {
+        margin-top: 60px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 100px;
+        width:134px;
+        height: 44px;
+        display: inline-block;
+        background-color: #1d1d21;
+        margin-right: 25px;
+
+    }
+
+    .page_text {
+        color: #4c4c53;
+        margin-left: 41px;
+        padding: 0px;
+        font-size: 24px;
+    }
+
+    /* @media screen and (min-width: 1920px) {
+        .type_list div {
+            width: 164px;
+            height: 44px;
+            margin-right: 43px;
+        }
+    }
+     */
+    .mov_show {
+
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .mov_show .sliding {
+        width: 200%;
+        margin-left: -132px;
+        padding-top: 50px;
+        z-index: -999;
+
+    }
+
+    .mov_show ul::after {
+        content: "";
+        display: block;
+        height: 0px;
+        line-height: 0px;
+        font-size: 0px;
+        clear: both;
+    }
+
+    .mov_show ul li {
+        float: left;
+        width: 228px;
+    }
+
+    .mov_show ul li img {
+        width: 90%;
+
+    }
+
+    .mov_show .sliding li:first-child {
+        -webkit-filter: brightness(40%);
+        filter: brightness(40%);
+    }
+
+    .mov_show .sliding li:last-child {
+        -webkit-filter: brightness(40%);
+        filter: brightness(40%);
+    }
+
+    /*电影详情*/
+    .mov_show .movie_review img {
+        width: 15px;
+        padding: 5px 0 0 20px;
+        vertical-align: top;
+
+
+    }
+
+    .mov_show .movie_review span {
+        font-size: 12px;
+        padding-left: 20px;
+    }
+
+    .movie_review span:nth-child(2) {
+        padding: 0px 35px 0 0;
+    }
+
+    .mov_show .movie_review p {
+        padding-top: 20px;
+        color: white;
+
+
+    }
+
+    .mov_show .score {
+        color: #e4a203;
+    }
+
+    .box .left_page {
+        position: relative;
+        top: -240px;
+        left: 10px;
+        display: inline-block;
+    }
+
+
+    .box .right_page {
+        position: relative;
+        top: -240px;
+        left: 1420px;
+        display: inline-block;
+        ;
+
+    }
+
+    /*评分条*/
+    .rating_bar {
+        position: relative;
+        left: 990px;
+        bottom: 30px;
+        display: inline-block;
+    }
+
+    .rating_bar div {
+        display: inline-block;
+
+    }
+
+    .rating_bar>.left_bar,
+    .right_bar {
+        position: relative;
+        width: 100px;
+        height: 5px;
+        bottom: 3px;
+        border-radius: 100px;
+        z-index: -9999;
+    }
+
+    .rating_bar>.left_bar {
+
+        background-color: #e4a203;
+        left: 6px;
+    }
+
+    .rating_bar>.right_bar {
+        background-color: #28282f;
+        right: 6px;
+    }
+
+    .rating_bar>.round_bar {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: white;
+
+    }
+
+    .mov_show .film_show li {
+        padding-top: 50px;
+    }
+
+
+    .film_box {
+        padding: 80px 82px 0 82px;
+    }
+
+    .film_show .play_warp {
+        float: left;
+        padding-top: 50px;
+
+    }
+
+    /*视频页面*/
+    .video {
+        display: none;
+        position: relative;
+        
+    }
+
+
+    .video img {
+
+        z-index: -9;
+
+    }
+
+    /*左边文字*/
+    .video .video_text {
+        position: relative;
+        top: 180px;
+        left: 70px;
+    }
+
+    .video .video_text p {
+        font-size: 38px;
+        color: white;
+    }
+
+
+    .video .video_text span {
+        font-size: 22px;
+        vertical-align: middle;
+    }
+
+    /* 右边logo */
+    .video .video_ico {
+        position: relative;
+        top: 90px;
+        left: 1184px;
+    }
+
+    .video .video_ico span {
+        font-size: 30px;
+        color: white;
+        margin-left: 30px;
+    }
+
+    /*底部进度条*/
+
+    .video .video_progress {
+        width: 90%;
+        height: 60px;
+        border-radius: 100px;
+        background-color: #131316;
+        position: absolute;
+        bottom: 40px;
+        left: 60px;
+    }
+
+    .video .video_progress .down_box {
+        margin-top: 14px;
+    }
+
+    .video .video_progress img {
+        margin-left: 40px;
+    }
+
+
+    .video .video_progress div {
+        display: inline-block;
+    }
+
+    .video .video_progress .lefts_bar {
+        width: 200px;
+        height: 10px;
+        border-radius: 100px;
+        background-color: #db1623;
+        position: relative;
+        right: -8px;
+        top: -2px;
+    }
+
+    .video .video_progress .rights_bar {
+        width: 490px;
+        height: 10px;
+        background-color: #4c4c53;
+        border-radius: 100px;
+        position: relative;
+        top: -2px;
+    }
+
+    .video .video_progress .rounds_bar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 1;
+        position: absolute;
+        top: 18px;
+    }
+
+    /*视频简介页*/
+    .video_details {
+        /* overflow:hidden;
+        vertical-align: middle; */
+        /* display: none; */
+        position: relative;
+    }
+
+    .video_details .film_details {
+        z-index: 9;
+        position: absolute;
+        top: 180px;
+        left: 40px;
+        padding: 0 0 0 100px;
+    }
+
+    .film_details .text {
+        /* width: 20px; */
+        display: inline-block;
+        background-color: #db9c16;
+        margin-bottom: 20px;
+    }
+
+    .film_details .text span {
+        color: white;
+    }
+
+    .video_details .film_details .score {
+        padding-top: 20px;
+    }
+
+    .video_details .film_details h2 {
+        font-size: 50px;
+        padding: 0px 0 20px 0;
+    }
+
+    /*视频右下角文字*/
+    .video_details .type {
+        position: absolute;
+        bottom: 10px;
+        left: 1018px;
+        z-index: 999;
+    }
+
+    .video_details .type div {
+        display: inline-block;
+
+    }
+
+    .video_details .type img {
+        width: 20px;
+        margin:0px 0px 7px 16px;
+    }
+
+    .video_details .type a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .type a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .type #round {
+        display: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #db1623;
+    }
+
+    footer {
+    
+        text-align: center;
+
+        
+    }
+    footer div{
+        width: 50px;
+        border-radius:100px;
+        background-color: #1d1d21;
+        text-align: center;
+        display: inline-block;
+    }
+    footer a{
+
+        font-size: 18px;
+         color: white;
+    }
+
+.big_vodeo>img{
+    width: 100%;
+    border-radius:20px;
+}
+
+.video_part{
+    position: relative;
+    bottom: 10px;
+    display: none;
+}
+.video_part #text{
+    position: absolute;
+    top: 10px;
+    color: white;
+  
+}
+.video_part #text span{
+    font-size: 10px;
+}
+.video_part #text p{
+    padding-right:86px;
+}
+.video_part a img{
+    width: 100%;
+}
+.video_part .btn{
+    width:100px;
+    height: 20px;
+    color: white;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 80px;
+    left: 44px;
+    background-color: #db1623;
+}
+.video_part .down{
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    
+}
+.video_part .down img {
+   
+    width: 16px;
+}
+.video_part .down span {
+   font-size: 16px;
+   color: white;
+   padding:0 60px 0 60px;
+   display: inline-block;
+}
