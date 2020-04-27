@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #app {
+            display: flex;
+        }
+
+
+        .aside {
+
+            background-color: #f6f7fb;
+            position: relative;
+        }
+
+        .aside .user_info {
+            padding: 50px;
+            width: 354px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ced0d6;
+        }
+
+        .aside .user_info .user_head {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: inline-block;
+            color: white;
+            background-color: #2b3139;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .aside .user_info .user_head span {
+            line-height: 55px;
+        }
+
+        .aside .user_info .account {
+            display: inline-block;
+            padding-left: 26px;
+            vertical-align: middle;
+        }
+
+        .aside .user_info .account p {
+            color: #4a4e55;
+        }
+
+        .aside .user_info .account span {
+            color: #ced0d6;
+        }
+
+        .message_list div {
+            margin-top: 42px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+        }
+
+        .message_list .meetings {
+            color: #4a4e55;
+            background-color: #e7e9eb;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .team {
+            display: flex;
+
+
+        }
+
+        .team .left {
+            color: #ced0d6;
+        }
+
+        .team .right {
+            margin-left: auto;
+            width: 25px;
+            text-align: center;
+            border-radius: 100px;
+            background-color: #fff;
+            color: #6b7382;
+            border: 1px solid #ced0d6;
+        }
+
+        .group span {
+            color: #6b7382;
+        }
+
+        .group .ico {
+            font-size: 22px;
+        }
+
+        .aside .base {
+            color: #64686f;
+            width: 254px;
+            padding: 50px;
+            border-top: 1px solid #ced0d6;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .aside .base span {
+            margin-top: 37px;
+        }
+
+        .content {
+            box-sizing: border-box;
+            padding: 50px;
+            position: relative;
+
+        }
+
+        .content .list {
+
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .list::after {
+            content: "";
+            display: block;
+            height: 0px;
+            line-height: 0px;
+            font-size: 0px;
+            clear: both;
+        }
+
+        .content .text_list {
+            float: left;
+
+        }
+
+        .content .text_list span {
+            margin-right: 34px;
+
+        }
+
+        .content .drop_down_list {
+            float: right;
+
+        }
+
+        .content .drop_down_list span {
+            color: #ced0d6;
+
+        }
+
+        .content .drop_down_list .ico {
+            transform: rotate(90deg);
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 50px;
+
+        }
+
+        .content ul {
+            overflow: hidden;
+
+        }
+
+        .content ul li {
+            list-style: none;
+            float: left;
+
+            padding-right: 37px;
+
+        }
+
+        .content ul li img {
+            width: 322px;
+
+        }
+
+        .content ul::after {
+            content: "";
+            display: block;
+            height: 0px;
+            line-height: 0px;
+            font-size: 0px;
+            clear: both;
+        }
+
+        @media screen and (max-width:1440px) {
+            .content ul li img {
+                width:282px;
+            }
+        }
+
+        .show_list li span {
+            color: #ced0d6;
+        }
+
+        .show_list li p {
+            padding-top: 30px;
+        }
+
+        .icon {
+            position: absolute;
+            right: 108px;
+            bottom: 100px;
+            width: 85px;
+            height: 85px;
+            background-color: #69bcca;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 58px;
+            text-align: center;
+        }
+
+        .show_list li i {
+            margin-left: auto;
+            color: #fec32d;
+        }
+
+        .show_list li div {
+            display: flex;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="app">
+        <div class="aside">
+            <div class="user_info">
+
+                <div class="user_head">
+                    <span> {{ head }}</span>
+                </div>
+                <div class="account">
+                    <p>{{ Mymessage}}</p>
+                    <span>{{ mail }}</span>
+                </div>
+
+            </div>
+            <div class="message_list">
+                <div class="meetings">{{ meetings }}</div>
+                <div class="team">
+                    <span class="left">{{ team }}</span>
+                    <span class="right">{{ ico }}</span>
+                </div>
+                <div class="group">
+                    <span class="ico">{{ ico }}</span><span>{{group}}</span>
+                </div>
+
+            </div>
+            <div class="base">
+                <i class="fa fa-bell-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>{{message}}</span><br>
+                <i class="fa fa-trash"></i>&nbsp;&nbsp;&nbsp;&nbsp; <span>{{trash}}</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>{{title}}</h3>
+            <div class="list">
+                <div class="text_list">
+                    <span v-for="(item,index) in text_list" v-on:click="bution(index)"
+                        v-bind:class="index == colin?'red':''">{{item.text}}</span>
+                </div>
+                <div class="drop_down_list">
+                    <span>{{ recently }}</span><span class="ico">{{ down }}</span>
+                    <span>{{  all }}</span><span class="ico">{{ down }}</span>
+                </div>
+            </div>
+
+            <ul class="show_list">
+                <li :key="index" v-for="(item, index) in shopping">
+                    <img v-bind:src="item.image1" alt="">
+                    <p v-for="txt in list" :key="txt.text">{{txt.text1 }}</p>
+                    <div><span v-for="txt in list" :key="txt.text">{{txt.time1}}</span> <i class="fa fa-star"></i></div>
+
+                </li>
+
+
+            </ul>
+            <div class="icon">
+                {{ ico }}
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        app = new Vue({
+            el: '#app',
+            data: {
+
+                head: 'Z',
+                Mymessage: 'Zealot',
+                mail: '1472507818@qq.com',
+                meetings: 'My meetings',
+                team: 'project team',
+                ico: '+',
+                group: 'Create project group',
+                message: 'message',
+                trash: 'Trash',
+                title: 'Mymessage',
+                text_list: [
+                    { text: 'all' },
+                    { text: 'cleated' },
+                    { text: 'Joined' },
+                    { text: 'Star' }
+                ],
+                colin: -1,
+                recently: 'Recently used',
+                down: '>',
+                all: 'all',
+                shopping: [
+                    {
+                        image1: ('./img/show_1.png'),
+
+                    },
+                    { image1: ('./img/show_2.png') },
+                    { image1: ('./img/show_3.png') },
+                    { image1: ('./img/show_4.png') },
+                    { image1: ('./img/show_5.png') },
+                    { image1: ('./img/show_6.png') },
+                    { image1: ('./img/show_7.png') },
+                    { image1: ('./img/show_8.png') },
+                    { image1: ('./img/show_6.png') }
+                ],
+                list: [
+                    {
+                        text1: 'Fintech App Concept...',
+                        time1: '2018/12/24'
+                    }
+                ]
+            },
+            methods: {
+                bution: function (e) {
+                    this.colin = e
+                    console.log(111);
+
+                }
+            }
+        }
+
+        )
+    </script>
+
+</body>
+
+</html>
